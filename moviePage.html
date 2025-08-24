@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema City</title>
+    <link rel="icon" type="image/png" href="images/logopng.png">
+    <link rel="stylesheet" href="styles/moviepageApp.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="nav-sliding-wrapper">
+        <svg id="closeMenu" class="nav-sliding__icon" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="92px" height="92px" viewBox="0 0 92 92" enable-background="new 0 0 92 92" xml:space="preserve">
+            <path id="XMLID_732_" d="M70.7,64.3c1.8,1.8,1.8,4.6,0,6.4c-0.9,0.9-2,1.3-3.2,1.3c-1.2,0-2.3-0.4-3.2-1.3L46,52.4L27.7,70.7  c-0.9,0.9-2,1.3-3.2,1.3s-2.3-0.4-3.2-1.3c-1.8-1.8-1.8-4.6,0-6.4L39.6,46L21.3,27.7c-1.8-1.8-1.8-4.6,0-6.4c1.8-1.8,4.6-1.8,6.4,0  L46,39.6l18.3-18.3c1.8-1.8,4.6-1.8,6.4,0c1.8,1.8,1.8,4.6,0,6.4L52.4,46L70.7,64.3z"/>
+        </svg>
+        <ul class="menu-sliding">
+            <li class="menu-sliding__item">
+                <a href="index.html" class="menu-sliding__link">صفحه اصلی</a>
+            </li>
+            <li class="menu-sliding__item">
+                <a href="moviePage.html" class="menu-sliding__link menu-sliding__link--active">فیلم</a>
+            </li>
+            <li class="menu-sliding__item">
+                <a href="#" class="menu-sliding__link">سریال</a>
+            </li>
+            <li class="menu-sliding__item">
+                <a href="#" class="menu-sliding__link">درباره ما</a>
+            </li>
+            <li class="menu-sliding__item">
+                <div class="menu-sliding__link-wrapper">
+                    <svg class="menu-sliding__link-icon" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 4C17.2015 3.99949 14.4519 4.73298 12.0255 6.12726C9.59904 7.52154 7.58076 9.52784 6.17205 11.9459C4.76335 14.364 4.0135 17.1092 3.99736 19.9077C3.98121 22.7061 4.69932 25.4598 6.08002 27.894C7.01324 26.6812 8.21288 25.6992 9.58619 25.024C10.9595 24.3487 12.4697 23.9984 14 24H26C27.5303 23.9984 29.0405 24.3487 30.4139 25.024C31.7872 25.6992 32.9868 26.6812 33.92 27.894C35.3007 25.4598 36.0188 22.7061 36.0027 19.9077C35.9865 17.1092 35.2367 14.364 33.828 11.9459C32.4193 9.52784 30.401 7.52154 27.9746 6.12726C25.5482 4.73298 22.7985 3.99949 20 4ZM35.886 32.152C38.5601 28.6659 40.0065 24.3935 40 20C40 8.954 31.046 0 20 0C8.95402 0 2.25065e-05 8.954 2.25065e-05 20C-0.00658037 24.3936 1.43983 28.666 4.11402 32.152L4.10402 32.188L4.81402 33.014C6.68979 35.207 9.01879 36.9672 11.6405 38.1733C14.2622 39.3793 17.1142 40.0026 20 40C24.0547 40.0075 28.0148 38.7758 31.35 36.47C32.7719 35.4876 34.0612 34.326 35.186 33.014L35.896 32.188L35.886 32.152ZM20 8C18.4087 8 16.8826 8.63214 15.7574 9.75736C14.6322 10.8826 14 12.4087 14 14C14 15.5913 14.6322 17.1174 15.7574 18.2426C16.8826 19.3679 18.4087 20 20 20C21.5913 20 23.1174 19.3679 24.2427 18.2426C25.3679 17.1174 26 15.5913 26 14C26 12.4087 25.3679 10.8826 24.2427 9.75736C23.1174 8.63214 21.5913 8 20 8Z" fill="#DF2144"/>
+                    </svg>
+                    <a href="#" class="menu-sliding__link">حساب کاربری</a>
+                </div>
+            </li>
+        </ul>
+        <div class="sliding-links">
+            <a href="loginPage.html" class="nav-links__link nav-links--border1 sliding-links__link">ورود</a>
+            <a href="loginPage.html" class="nav-links__link nav-links--border2 sliding-links__link">ثبت نام</a>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-wraper-right">
+                    <div class="nav-wraper-logo">
+                        <div class="logo__wraper">
+                            <a href="#" class="nav-logo">
+                                <!-- <svg class="nav-logo__img" xmlns="http://www.w3.org/2000/svg" width="40" height="32" viewBox="0 0 40 32" fill="none">
+                                    <rect width="40" height="32" rx="4" fill="#DF2144"/>
+                                </svg> -->
+                                <svg class="nav-logo__img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="226" height="154" viewBox="0 0 226 154" fill="none">
+                                    <rect x="0.599976" width="224.8" height="153.236" rx="12" fill="url(#pattern0_801_527)"></rect>
+                                    <defs>
+                                    <pattern id="pattern0_801_527" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_801_527" transform="matrix(0.00833333 0 0 0.0122252 0 -0.0501324)"></use>
+                                    </pattern>
+                                    <image id="image0_801_527" width="120" height="90" preserveAspectRatio="none" xlink:href="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABkAAD/4QMvaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA3LjItYzAwMCA3OS4xYjY1YTc5YjQsIDIwMjIvMDYvMTMtMjI6MDE6MDEgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMy41IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGQTQ2NjY5QTdENEQxMUYwODgxOTg0OEMxMkIwOEVGMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGQTQ2NjY5QjdENEQxMUYwODgxOTg0OEMxMkIwOEVGMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZBNDY2Njk4N0Q0RDExRjA4ODE5ODQ4QzEyQjA4RUYxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkZBNDY2Njk5N0Q0RDExRjA4ODE5ODQ4QzEyQjA4RUYxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQAAQEBAQEBAQEBAQEBAQEB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"></image>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <p class="nav-logo__title">سینما سیتی </p>
+                        </div>
+                        <p class="nav-logo__content">پخش آنلاین و دانلود</p>
+                    </div>
+                    <svg id="openMenu" class="nav__sliding-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 6H12H19M5 12H19M5 18H19" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <div class="nav-wraper-menu">
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <a href="index.html" class="menu__link">صفحه اصلی</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="moviePage.html" class="menu__link menu__link--active">فیلم</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">سریال</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">درباره ما</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-wraper-left">
+                    <div class="nav-wraper-search">
+                        <form class="nav__form">
+                            <input type="nav__search" class="search" placeholder="جستجو ...">
+                            <button class="nav__search-btn">
+                                <svg class="search-btn" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M8.26729 15.9014C9.87827 15.8993 11.4483 15.3934 12.7574 14.4546L17.5184 19.216C17.6253 19.3223 17.7523 19.4063 17.8919 19.4632C18.0316 19.5201 18.1811 19.5487 18.3319 19.5473C18.985 19.5473 19.4569 19.045 19.4569 18.4022C19.4569 18.1009 19.3566 17.8197 19.1354 17.599L14.4044 12.8577C15.3987 11.5519 15.9914 9.93487 15.9914 8.17687C15.9914 3.92801 12.5161 0.452728 8.26729 0.452728C4.00857 0.452728 0.543144 3.92801 0.543144 8.17687C0.543144 12.4257 4.00857 15.9014 8.26729 15.9014ZM8.26729 14.2339C4.94243 14.2339 2.21029 11.4919 2.21029 8.17687C2.21029 4.8623 4.94243 2.11987 8.26729 2.11987C11.5819 2.11987 14.3243 4.8623 14.3243 8.17687C14.3243 11.4919 11.5819 14.2339 8.26729 14.2339Z" fill="#EAEAEA"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="nav-wraper-links">
+                        <a href="loginPage.html" class="nav-links__link nav-links--border1">ورود</a>
+                        <a href="loginPage.html" class="nav-links__link nav-links--border2">ثبت نام</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Main -->
+    <main class="main">
+        <div class="container">
+            <h1 class="movies-title">فیلم ها</h1>
+            <!-- Advanced-Movie -->
+            <section class="adv-search">
+                <div class="adv__title">
+                    <p class="adv-title">جستجوی پیشرفته</p>
+                    <div class="adv__btn"></div>
+                </div>
+                <div class="adv__content">
+                    <div class="adv__wraper-form">
+                        <div class="adv-form">
+                            <p class="adv-form-title">نوع</p>
+                            <form class="adv__form">
+                                <input type="text" class="adv-form-input" placeholder="همه">
+                                <svg class="adv__svg" xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                                    <path d="M14.25 1.25001L13.125 0.200012L7.5 5.75001L1.875 0.200012L0.75 1.25001L7.5 8.00001L14.25 1.25001Z" fill="#DF2144"/>
+                                </svg>
+                            </form>
+                        </div>
+                        <div class="adv-form">
+                            <p class="adv-form-title">ژانر</p>
+                            <form class="adv__form">
+                                <input type="text" class="adv-form-input" placeholder="همه">
+                                <svg class="adv__svg" xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                                    <path d="M14.25 1.25001L13.125 0.200012L7.5 5.75001L1.875 0.200012L0.75 1.25001L7.5 8.00001L14.25 1.25001Z" fill="#DF2144"/>
+                                </svg>
+                            </form>
+                        </div>
+                        <div class="adv-form">
+                            <p class="adv-form-title">سال انتشار از</p>
+                            <form class="adv__form">
+                                <input type="text" class="adv-form-input" placeholder="انتخاب نشده">
+                                <svg class="adv__svg" xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                                    <path d="M14.25 1.25001L13.125 0.200012L7.5 5.75001L1.875 0.200012L0.75 1.25001L7.5 8.00001L14.25 1.25001Z" fill="#DF2144"/>
+                                </svg>
+                            </form>
+                        </div>
+                        <div class="adv-form">
+                            <p class="adv-form-title">سال انتشار تا</p>
+                            <form class="adv__form">
+                                <input type="text" class="adv-form-input" placeholder="انتخاب نشده">
+                                <svg class="adv__svg" xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                                    <path d="M14.25 1.25001L13.125 0.200012L7.5 5.75001L1.875 0.200012L0.75 1.25001L7.5 8.00001L14.25 1.25001Z" fill="#DF2144"/>
+                                </svg>
+                            </form>
+                        </div>
+                        <div class="adv-form">
+                            <p class="adv-form-title">کشور</p>
+                            <form class="adv__form">
+                                <input type="text" class="adv-form-input" placeholder="همه">
+                                <svg class="adv__svg" xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                                    <path d="M14.25 1.25001L13.125 0.200012L7.5 5.75001L1.875 0.200012L0.75 1.25001L7.5 8.00001L14.25 1.25001Z" fill="#DF2144"/>
+                                </svg>
+                            </form>
+                        </div>
+                        <div class="adv-form">
+                            <p class="adv-form-title">امتیاز  IMDB از</p>
+                            <form class="adv__form">
+                                <input type="text" class="adv-form-input" placeholder="انتخاب نشده">
+                                <svg class="adv__svg" xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                                    <path d="M14.25 1.25001L13.125 0.200012L7.5 5.75001L1.875 0.200012L0.75 1.25001L7.5 8.00001L14.25 1.25001Z" fill="#DF2144"/>
+                                </svg>
+                            </form>
+                        </div>
+                        <div class="adv-form">
+                            <p class="adv-form-title">امتیاز Imdb تا</p>
+                            <form class="adv__form">
+                                <input type="text" class="adv-form-input" placeholder="انتخاب نشده">
+                                <svg class="adv__svg" xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                                    <path d="M14.25 1.25001L13.125 0.200012L7.5 5.75001L1.875 0.200012L0.75 1.25001L7.5 8.00001L14.25 1.25001Z" fill="#DF2144"/>
+                                </svg>
+                            </form>
+                        </div>
+                        <div class="adv-form">
+                            <p class="adv-form-title">رده سنی</p>
+                            <form class="adv__form">
+                                <input type="text" class="adv-form-input" placeholder="همه">
+                                <svg class="adv__svg" xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                                    <path d="M14.25 1.25001L13.125 0.200012L7.5 5.75001L1.875 0.200012L0.75 1.25001L7.5 8.00001L14.25 1.25001Z" fill="#DF2144"/>
+                                </svg>
+                            </form>
+                        </div>
+                        <div class="adv-form">
+                            <p class="adv-form-title">ترتیب</p>
+                            <form class="adv__form">
+                                <input type="text" class="adv-form-input" placeholder="بر اساس امتیاز IMDB">
+                                <svg class="adv__svg" xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                                    <path d="M14.25 1.25001L13.125 0.200012L7.5 5.75001L1.875 0.200012L0.75 1.25001L7.5 8.00001L14.25 1.25001Z" fill="#DF2144"/>
+                                </svg>
+                            </form>
+                        </div>
+                        <div class="adv-form adv__BTN">
+                            <p class="adv-form-title">دوبله</p>
+                            <div class="adv-form__dublebtn">
+                                <div class="adv-form__duble-btn"></div>
+                            </div>
+                        </div>
+                        <div class="adv-form adv__BTN">
+                            <p class="adv-form-title">زیرنویس</p>
+                            <div class="adv-form__subtitlebtn">
+                                <div class="adv-form__subtitle-btn"></div>
+                            </div>
+                        </div>
+                        <button class="adv-search__btn btn">اعمال فیلتر و جستجو</button>
+                    </div>
+                </div>
+            </section>
+            <!-- Movies -->
+            <section class="movies">
+                <div class="movies__wrapper">
+                    <div onclick="window.open('///C:/Users/Younes.A.J/Desktop/Project-Movie/downloadPage.html', '_self')" class="movie__info-wrapper">
+                        <div class="movie__info">
+                            <img src="images/Home Page/action1.jpg" alt="movie image" class="movie-img">
+                            <div class="movie-caption">
+                                <p class="movie__content-title">خلاصه داستان</p>
+                                <p class="movie__content">فیلم اوپنهایمر Oppenheimer پدر بمب اتم به کارگردانی کریستوفر نولان است . فیلم بر اساس وقایع واقعی با روایت داستان جی رابرت اوپنهایمر است. اساس زندگینامه کای برد و مارتین جی شروین است. این فیلم قرار است در تاریخ 21 جولای 2023 در سینماهای ایالات متحده اکران شود. این فیلم برای اولین بار برای یونیورسال پیکچرز پخش می شود.</p>
+                                <div class="movie__content-wrapper">
+                                    <div class="movie-ageGroup">
+                                        <p class="movie__ageGroup-title">رده سنیی</p>
+                                        <p class="movie__ageGroup-content">TV-MA</p>
+                                    </div>
+                                    <div class="movie-swiper-genre">
+                                        <p class="movie__genre-title">ژانر</p>
+                                        <p class="movie__genre-content">اکشن، درام، هیجان انگیز، ماجراجویی</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-content">
+                                <span class="movie__time">2h 26m</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M7.99997 16.5393C5.87824 16.5393 3.84341 15.6965 2.34312 14.1962C0.842824 12.6959 -3.05176e-05 10.661 -3.05176e-05 8.53931C-3.05176e-05 6.41757 0.842824 4.38274 2.34312 2.88245C3.84341 1.38216 5.87824 0.539307 7.99997 0.539307C10.1217 0.539307 12.1565 1.38216 13.6568 2.88245C15.1571 4.38274 16 6.41757 16 8.53931C16 10.661 15.1571 12.6959 13.6568 14.1962C12.1565 15.6965 10.1217 16.5393 7.99997 16.5393ZM7.99997 14.9393C9.69736 14.9393 11.3252 14.265 12.5255 13.0648C13.7257 11.8646 14.4 10.2367 14.4 8.53931C14.4 6.84192 13.7257 5.21406 12.5255 4.01382C11.3252 2.81359 9.69736 2.13931 7.99997 2.13931C6.30258 2.13931 4.67472 2.81359 3.47449 4.01382C2.27425 5.21406 1.59997 6.84192 1.59997 8.53931C1.59997 10.2367 2.27425 11.8646 3.47449 13.0648C4.67472 14.265 6.30258 14.9393 7.99997 14.9393ZM7.19997 8.86731V3.73931H8.79997V8.21131L11.96 11.3713L10.832 12.4993L7.19997 8.86731Z" fill="#FFD600"></path>
+                                </svg>
+                                <span class="movie__imdb">8</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                    <g clip-path="url(#clip0_799_440)">
+                                    <path d="M9.93896 6.93207V6.93457C9.88946 6.90307 9.78796 6.88757 9.66046 6.88757V10.0986C9.83996 10.0986 9.95196 10.0571 9.99396 9.98657C10.0355 9.91907 10.0565 9.71857 10.0565 9.39807V7.48657C10.0565 7.26757 10.054 7.12707 10.0355 7.06707C10.02 7.00207 9.99096 6.95757 9.94146 6.93157L9.93896 6.93207ZM15.3425 0.539074H1.48046C1.20175 0.55511 0.938394 0.67203 0.739566 0.868006C0.540737 1.06398 0.420025 1.32562 0.399963 1.60407L0.399963 15.4581C0.438963 16.0416 0.873963 16.4866 1.43646 16.5361C1.44696 16.5386 1.45746 16.5386 1.46796 16.5386H15.364C15.6471 16.5102 15.9097 16.3779 16.1011 16.1673C16.2925 15.9567 16.3992 15.6827 16.4005 15.3981V1.67907C16.399 1.39109 16.2896 1.11412 16.0938 0.90294C15.8979 0.69176 15.63 0.561735 15.343 0.538574L15.3425 0.539074ZM3.59546 10.9556H2.32446V6.04657H3.59546V10.9556ZM7.95446 10.9556H6.84746V7.64057L6.39946 10.9531H5.60796L5.14196 7.71357L5.13696 10.9531H4.02746V6.04657H5.67046C5.72796 6.39307 5.77746 6.74457 5.82396 7.09607L6.00346 8.34107L6.30046 6.04657H7.95396L7.95446 10.9556ZM11.2725 9.50257C11.2725 9.93757 11.244 10.2316 11.202 10.3826C11.17 10.5187 11.0941 10.6404 10.986 10.7291C10.8769 10.8202 10.7459 10.8812 10.606 10.9061C10.4575 10.9346 10.226 10.9556 9.92646 10.9556L9.92396 10.9531H8.38746V6.04657H9.33796C9.94746 6.04657 10.304 6.07807 10.5175 6.13007C10.7335 6.19007 10.9005 6.28107 11.015 6.41157C11.1245 6.53157 11.1975 6.67957 11.2235 6.84107C11.2575 6.99757 11.273 7.31007 11.273 7.77607L11.2725 9.50257ZM14.5695 9.81757C14.5695 10.1171 14.538 10.3281 14.5095 10.4791C14.468 10.6276 14.3795 10.7471 14.2385 10.8566C14.0875 10.9686 13.918 11.0181 13.7175 11.0181C13.5715 11.0181 13.384 10.9766 13.2645 10.9271C13.1313 10.8563 13.0142 10.7587 12.9205 10.6406L12.845 10.9556H11.699V6.04657L11.686 6.04407H12.8865V7.64307C12.9855 7.52607 13.0975 7.43757 13.225 7.37757C13.3722 7.32141 13.5284 7.29228 13.686 7.29157C13.837 7.29157 13.9855 7.31507 14.126 7.36957C14.2405 7.41657 14.3395 7.49207 14.4175 7.58857C14.4775 7.67207 14.5165 7.76807 14.5375 7.87007C14.5555 7.96107 14.566 8.15657 14.566 8.44807V9.81807L14.5695 9.81757ZM13.119 8.00807C13.041 8.00807 12.9915 8.03657 12.9705 8.08857C12.9495 8.14307 12.9315 8.28107 12.9315 8.50507V9.80207C12.9315 10.0181 12.9495 10.1591 12.9705 10.2186C12.9839 10.2467 13.0055 10.2702 13.0324 10.286C13.0593 10.3018 13.0903 10.3091 13.1215 10.3071C13.1995 10.3071 13.301 10.2756 13.322 10.2131C13.34 10.1481 13.3505 9.99957 13.3505 9.76507L13.3715 9.76257V8.50207C13.3715 8.30157 13.361 8.16357 13.3325 8.10107C13.301 8.03357 13.2025 8.00707 13.1215 8.00707L13.119 8.00807Z" fill="#FFD600"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_799_440">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.399963 0.539307)"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="movie-name">Oppenheimer 2023</p>
+                    </div>
+                    <div onclick="window.open('downloadPage.html', '_self')" class="movie__info-wrapper">
+                        <div class="movie__info">
+                            <img src="images/Home Page/action2.jpg" alt="movie image" class="movie-img">
+                            <div class="movie-caption">
+                                <p class="movie__content-title">خلاصه داستان</p>
+                                <p class="movie__content">فیلم اوپنهایمر Oppenheimer پدر بمب اتم به کارگردانی کریستوفر نولان است . فیلم بر اساس وقایع واقعی با روایت داستان جی رابرت اوپنهایمر است. اساس زندگینامه کای برد و مارتین جی شروین است. این فیلم قرار است در تاریخ 21 جولای 2023 در سینماهای ایالات متحده اکران شود. این فیلم برای اولین بار برای یونیورسال پیکچرز پخش می شود.</p>
+                                <div class="movie__content-wrapper">
+                                    <div class="movie-ageGroup">
+                                        <p class="movie__ageGroup-title">رده سنیی</p>
+                                        <p class="movie__ageGroup-content">TV-MA</p>
+                                    </div>
+                                    <div class="movie-swiper-genre">
+                                        <p class="movie__genre-title">ژانر</p>
+                                        <p class="movie__genre-content">اکشن، درام، هیجان انگیز، ماجراجویی</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-content">
+                                <span class="movie__time">2h 26m</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M7.99997 16.5393C5.87824 16.5393 3.84341 15.6965 2.34312 14.1962C0.842824 12.6959 -3.05176e-05 10.661 -3.05176e-05 8.53931C-3.05176e-05 6.41757 0.842824 4.38274 2.34312 2.88245C3.84341 1.38216 5.87824 0.539307 7.99997 0.539307C10.1217 0.539307 12.1565 1.38216 13.6568 2.88245C15.1571 4.38274 16 6.41757 16 8.53931C16 10.661 15.1571 12.6959 13.6568 14.1962C12.1565 15.6965 10.1217 16.5393 7.99997 16.5393ZM7.99997 14.9393C9.69736 14.9393 11.3252 14.265 12.5255 13.0648C13.7257 11.8646 14.4 10.2367 14.4 8.53931C14.4 6.84192 13.7257 5.21406 12.5255 4.01382C11.3252 2.81359 9.69736 2.13931 7.99997 2.13931C6.30258 2.13931 4.67472 2.81359 3.47449 4.01382C2.27425 5.21406 1.59997 6.84192 1.59997 8.53931C1.59997 10.2367 2.27425 11.8646 3.47449 13.0648C4.67472 14.265 6.30258 14.9393 7.99997 14.9393ZM7.19997 8.86731V3.73931H8.79997V8.21131L11.96 11.3713L10.832 12.4993L7.19997 8.86731Z" fill="#FFD600"></path>
+                                </svg>
+                                <span class="movie__imdb">8</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                    <g clip-path="url(#clip0_799_440)">
+                                    <path d="M9.93896 6.93207V6.93457C9.88946 6.90307 9.78796 6.88757 9.66046 6.88757V10.0986C9.83996 10.0986 9.95196 10.0571 9.99396 9.98657C10.0355 9.91907 10.0565 9.71857 10.0565 9.39807V7.48657C10.0565 7.26757 10.054 7.12707 10.0355 7.06707C10.02 7.00207 9.99096 6.95757 9.94146 6.93157L9.93896 6.93207ZM15.3425 0.539074H1.48046C1.20175 0.55511 0.938394 0.67203 0.739566 0.868006C0.540737 1.06398 0.420025 1.32562 0.399963 1.60407L0.399963 15.4581C0.438963 16.0416 0.873963 16.4866 1.43646 16.5361C1.44696 16.5386 1.45746 16.5386 1.46796 16.5386H15.364C15.6471 16.5102 15.9097 16.3779 16.1011 16.1673C16.2925 15.9567 16.3992 15.6827 16.4005 15.3981V1.67907C16.399 1.39109 16.2896 1.11412 16.0938 0.90294C15.8979 0.69176 15.63 0.561735 15.343 0.538574L15.3425 0.539074ZM3.59546 10.9556H2.32446V6.04657H3.59546V10.9556ZM7.95446 10.9556H6.84746V7.64057L6.39946 10.9531H5.60796L5.14196 7.71357L5.13696 10.9531H4.02746V6.04657H5.67046C5.72796 6.39307 5.77746 6.74457 5.82396 7.09607L6.00346 8.34107L6.30046 6.04657H7.95396L7.95446 10.9556ZM11.2725 9.50257C11.2725 9.93757 11.244 10.2316 11.202 10.3826C11.17 10.5187 11.0941 10.6404 10.986 10.7291C10.8769 10.8202 10.7459 10.8812 10.606 10.9061C10.4575 10.9346 10.226 10.9556 9.92646 10.9556L9.92396 10.9531H8.38746V6.04657H9.33796C9.94746 6.04657 10.304 6.07807 10.5175 6.13007C10.7335 6.19007 10.9005 6.28107 11.015 6.41157C11.1245 6.53157 11.1975 6.67957 11.2235 6.84107C11.2575 6.99757 11.273 7.31007 11.273 7.77607L11.2725 9.50257ZM14.5695 9.81757C14.5695 10.1171 14.538 10.3281 14.5095 10.4791C14.468 10.6276 14.3795 10.7471 14.2385 10.8566C14.0875 10.9686 13.918 11.0181 13.7175 11.0181C13.5715 11.0181 13.384 10.9766 13.2645 10.9271C13.1313 10.8563 13.0142 10.7587 12.9205 10.6406L12.845 10.9556H11.699V6.04657L11.686 6.04407H12.8865V7.64307C12.9855 7.52607 13.0975 7.43757 13.225 7.37757C13.3722 7.32141 13.5284 7.29228 13.686 7.29157C13.837 7.29157 13.9855 7.31507 14.126 7.36957C14.2405 7.41657 14.3395 7.49207 14.4175 7.58857C14.4775 7.67207 14.5165 7.76807 14.5375 7.87007C14.5555 7.96107 14.566 8.15657 14.566 8.44807V9.81807L14.5695 9.81757ZM13.119 8.00807C13.041 8.00807 12.9915 8.03657 12.9705 8.08857C12.9495 8.14307 12.9315 8.28107 12.9315 8.50507V9.80207C12.9315 10.0181 12.9495 10.1591 12.9705 10.2186C12.9839 10.2467 13.0055 10.2702 13.0324 10.286C13.0593 10.3018 13.0903 10.3091 13.1215 10.3071C13.1995 10.3071 13.301 10.2756 13.322 10.2131C13.34 10.1481 13.3505 9.99957 13.3505 9.76507L13.3715 9.76257V8.50207C13.3715 8.30157 13.361 8.16357 13.3325 8.10107C13.301 8.03357 13.2025 8.00707 13.1215 8.00707L13.119 8.00807Z" fill="#FFD600"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_799_440">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.399963 0.539307)"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="movie-name">Oppenheimer 2023</p>
+                    </div>
+                    <div onclick="window.open('downloadPage.html', '_self')" class="movie__info-wrapper">
+                        <div class="movie__info">
+                            <img src="images/Home Page/action3.jpg" alt="movie image" class="movie-img">
+                            <div class="movie-caption">
+                                <p class="movie__content-title">خلاصه داستان</p>
+                                <p class="movie__content">فیلم اوپنهایمر Oppenheimer پدر بمب اتم به کارگردانی کریستوفر نولان است . فیلم بر اساس وقایع واقعی با روایت داستان جی رابرت اوپنهایمر است. اساس زندگینامه کای برد و مارتین جی شروین است. این فیلم قرار است در تاریخ 21 جولای 2023 در سینماهای ایالات متحده اکران شود. این فیلم برای اولین بار برای یونیورسال پیکچرز پخش می شود.</p>
+                                <div class="movie__content-wrapper">
+                                    <div class="movie-ageGroup">
+                                        <p class="movie__ageGroup-title">رده سنیی</p>
+                                        <p class="movie__ageGroup-content">TV-MA</p>
+                                    </div>
+                                    <div class="movie-swiper-genre">
+                                        <p class="movie__genre-title">ژانر</p>
+                                        <p class="movie__genre-content">اکشن، درام، هیجان انگیز، ماجراجویی</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-content">
+                                <span class="movie__time">2h 26m</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M7.99997 16.5393C5.87824 16.5393 3.84341 15.6965 2.34312 14.1962C0.842824 12.6959 -3.05176e-05 10.661 -3.05176e-05 8.53931C-3.05176e-05 6.41757 0.842824 4.38274 2.34312 2.88245C3.84341 1.38216 5.87824 0.539307 7.99997 0.539307C10.1217 0.539307 12.1565 1.38216 13.6568 2.88245C15.1571 4.38274 16 6.41757 16 8.53931C16 10.661 15.1571 12.6959 13.6568 14.1962C12.1565 15.6965 10.1217 16.5393 7.99997 16.5393ZM7.99997 14.9393C9.69736 14.9393 11.3252 14.265 12.5255 13.0648C13.7257 11.8646 14.4 10.2367 14.4 8.53931C14.4 6.84192 13.7257 5.21406 12.5255 4.01382C11.3252 2.81359 9.69736 2.13931 7.99997 2.13931C6.30258 2.13931 4.67472 2.81359 3.47449 4.01382C2.27425 5.21406 1.59997 6.84192 1.59997 8.53931C1.59997 10.2367 2.27425 11.8646 3.47449 13.0648C4.67472 14.265 6.30258 14.9393 7.99997 14.9393ZM7.19997 8.86731V3.73931H8.79997V8.21131L11.96 11.3713L10.832 12.4993L7.19997 8.86731Z" fill="#FFD600"></path>
+                                </svg>
+                                <span class="movie__imdb">8</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                    <g clip-path="url(#clip0_799_440)">
+                                    <path d="M9.93896 6.93207V6.93457C9.88946 6.90307 9.78796 6.88757 9.66046 6.88757V10.0986C9.83996 10.0986 9.95196 10.0571 9.99396 9.98657C10.0355 9.91907 10.0565 9.71857 10.0565 9.39807V7.48657C10.0565 7.26757 10.054 7.12707 10.0355 7.06707C10.02 7.00207 9.99096 6.95757 9.94146 6.93157L9.93896 6.93207ZM15.3425 0.539074H1.48046C1.20175 0.55511 0.938394 0.67203 0.739566 0.868006C0.540737 1.06398 0.420025 1.32562 0.399963 1.60407L0.399963 15.4581C0.438963 16.0416 0.873963 16.4866 1.43646 16.5361C1.44696 16.5386 1.45746 16.5386 1.46796 16.5386H15.364C15.6471 16.5102 15.9097 16.3779 16.1011 16.1673C16.2925 15.9567 16.3992 15.6827 16.4005 15.3981V1.67907C16.399 1.39109 16.2896 1.11412 16.0938 0.90294C15.8979 0.69176 15.63 0.561735 15.343 0.538574L15.3425 0.539074ZM3.59546 10.9556H2.32446V6.04657H3.59546V10.9556ZM7.95446 10.9556H6.84746V7.64057L6.39946 10.9531H5.60796L5.14196 7.71357L5.13696 10.9531H4.02746V6.04657H5.67046C5.72796 6.39307 5.77746 6.74457 5.82396 7.09607L6.00346 8.34107L6.30046 6.04657H7.95396L7.95446 10.9556ZM11.2725 9.50257C11.2725 9.93757 11.244 10.2316 11.202 10.3826C11.17 10.5187 11.0941 10.6404 10.986 10.7291C10.8769 10.8202 10.7459 10.8812 10.606 10.9061C10.4575 10.9346 10.226 10.9556 9.92646 10.9556L9.92396 10.9531H8.38746V6.04657H9.33796C9.94746 6.04657 10.304 6.07807 10.5175 6.13007C10.7335 6.19007 10.9005 6.28107 11.015 6.41157C11.1245 6.53157 11.1975 6.67957 11.2235 6.84107C11.2575 6.99757 11.273 7.31007 11.273 7.77607L11.2725 9.50257ZM14.5695 9.81757C14.5695 10.1171 14.538 10.3281 14.5095 10.4791C14.468 10.6276 14.3795 10.7471 14.2385 10.8566C14.0875 10.9686 13.918 11.0181 13.7175 11.0181C13.5715 11.0181 13.384 10.9766 13.2645 10.9271C13.1313 10.8563 13.0142 10.7587 12.9205 10.6406L12.845 10.9556H11.699V6.04657L11.686 6.04407H12.8865V7.64307C12.9855 7.52607 13.0975 7.43757 13.225 7.37757C13.3722 7.32141 13.5284 7.29228 13.686 7.29157C13.837 7.29157 13.9855 7.31507 14.126 7.36957C14.2405 7.41657 14.3395 7.49207 14.4175 7.58857C14.4775 7.67207 14.5165 7.76807 14.5375 7.87007C14.5555 7.96107 14.566 8.15657 14.566 8.44807V9.81807L14.5695 9.81757ZM13.119 8.00807C13.041 8.00807 12.9915 8.03657 12.9705 8.08857C12.9495 8.14307 12.9315 8.28107 12.9315 8.50507V9.80207C12.9315 10.0181 12.9495 10.1591 12.9705 10.2186C12.9839 10.2467 13.0055 10.2702 13.0324 10.286C13.0593 10.3018 13.0903 10.3091 13.1215 10.3071C13.1995 10.3071 13.301 10.2756 13.322 10.2131C13.34 10.1481 13.3505 9.99957 13.3505 9.76507L13.3715 9.76257V8.50207C13.3715 8.30157 13.361 8.16357 13.3325 8.10107C13.301 8.03357 13.2025 8.00707 13.1215 8.00707L13.119 8.00807Z" fill="#FFD600"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_799_440">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.399963 0.539307)"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="movie-name">Oppenheimer 2023</p>
+                    </div>
+                    <div onclick="window.open('downloadPage.html', '_self')" class="movie__info-wrapper">
+                        <div class="movie__info">
+                            <img src="images/Home Page/action4.jpg" alt="movie image" class="movie-img">
+                            <div class="movie-caption">
+                                <p class="movie__content-title">خلاصه داستان</p>
+                                <p class="movie__content">فیلم اوپنهایمر Oppenheimer پدر بمب اتم به کارگردانی کریستوفر نولان است . فیلم بر اساس وقایع واقعی با روایت داستان جی رابرت اوپنهایمر است. اساس زندگینامه کای برد و مارتین جی شروین است. این فیلم قرار است در تاریخ 21 جولای 2023 در سینماهای ایالات متحده اکران شود. این فیلم برای اولین بار برای یونیورسال پیکچرز پخش می شود.</p>
+                                <div class="movie__content-wrapper">
+                                    <div class="movie-ageGroup">
+                                        <p class="movie__ageGroup-title">رده سنیی</p>
+                                        <p class="movie__ageGroup-content">TV-MA</p>
+                                    </div>
+                                    <div class="movie-swiper-genre">
+                                        <p class="movie__genre-title">ژانر</p>
+                                        <p class="movie__genre-content">اکشن، درام، هیجان انگیز، ماجراجویی</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-content">
+                                <span class="movie__time">2h 26m</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M7.99997 16.5393C5.87824 16.5393 3.84341 15.6965 2.34312 14.1962C0.842824 12.6959 -3.05176e-05 10.661 -3.05176e-05 8.53931C-3.05176e-05 6.41757 0.842824 4.38274 2.34312 2.88245C3.84341 1.38216 5.87824 0.539307 7.99997 0.539307C10.1217 0.539307 12.1565 1.38216 13.6568 2.88245C15.1571 4.38274 16 6.41757 16 8.53931C16 10.661 15.1571 12.6959 13.6568 14.1962C12.1565 15.6965 10.1217 16.5393 7.99997 16.5393ZM7.99997 14.9393C9.69736 14.9393 11.3252 14.265 12.5255 13.0648C13.7257 11.8646 14.4 10.2367 14.4 8.53931C14.4 6.84192 13.7257 5.21406 12.5255 4.01382C11.3252 2.81359 9.69736 2.13931 7.99997 2.13931C6.30258 2.13931 4.67472 2.81359 3.47449 4.01382C2.27425 5.21406 1.59997 6.84192 1.59997 8.53931C1.59997 10.2367 2.27425 11.8646 3.47449 13.0648C4.67472 14.265 6.30258 14.9393 7.99997 14.9393ZM7.19997 8.86731V3.73931H8.79997V8.21131L11.96 11.3713L10.832 12.4993L7.19997 8.86731Z" fill="#FFD600"></path>
+                                </svg>
+                                <span class="movie__imdb">8</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                    <g clip-path="url(#clip0_799_440)">
+                                    <path d="M9.93896 6.93207V6.93457C9.88946 6.90307 9.78796 6.88757 9.66046 6.88757V10.0986C9.83996 10.0986 9.95196 10.0571 9.99396 9.98657C10.0355 9.91907 10.0565 9.71857 10.0565 9.39807V7.48657C10.0565 7.26757 10.054 7.12707 10.0355 7.06707C10.02 7.00207 9.99096 6.95757 9.94146 6.93157L9.93896 6.93207ZM15.3425 0.539074H1.48046C1.20175 0.55511 0.938394 0.67203 0.739566 0.868006C0.540737 1.06398 0.420025 1.32562 0.399963 1.60407L0.399963 15.4581C0.438963 16.0416 0.873963 16.4866 1.43646 16.5361C1.44696 16.5386 1.45746 16.5386 1.46796 16.5386H15.364C15.6471 16.5102 15.9097 16.3779 16.1011 16.1673C16.2925 15.9567 16.3992 15.6827 16.4005 15.3981V1.67907C16.399 1.39109 16.2896 1.11412 16.0938 0.90294C15.8979 0.69176 15.63 0.561735 15.343 0.538574L15.3425 0.539074ZM3.59546 10.9556H2.32446V6.04657H3.59546V10.9556ZM7.95446 10.9556H6.84746V7.64057L6.39946 10.9531H5.60796L5.14196 7.71357L5.13696 10.9531H4.02746V6.04657H5.67046C5.72796 6.39307 5.77746 6.74457 5.82396 7.09607L6.00346 8.34107L6.30046 6.04657H7.95396L7.95446 10.9556ZM11.2725 9.50257C11.2725 9.93757 11.244 10.2316 11.202 10.3826C11.17 10.5187 11.0941 10.6404 10.986 10.7291C10.8769 10.8202 10.7459 10.8812 10.606 10.9061C10.4575 10.9346 10.226 10.9556 9.92646 10.9556L9.92396 10.9531H8.38746V6.04657H9.33796C9.94746 6.04657 10.304 6.07807 10.5175 6.13007C10.7335 6.19007 10.9005 6.28107 11.015 6.41157C11.1245 6.53157 11.1975 6.67957 11.2235 6.84107C11.2575 6.99757 11.273 7.31007 11.273 7.77607L11.2725 9.50257ZM14.5695 9.81757C14.5695 10.1171 14.538 10.3281 14.5095 10.4791C14.468 10.6276 14.3795 10.7471 14.2385 10.8566C14.0875 10.9686 13.918 11.0181 13.7175 11.0181C13.5715 11.0181 13.384 10.9766 13.2645 10.9271C13.1313 10.8563 13.0142 10.7587 12.9205 10.6406L12.845 10.9556H11.699V6.04657L11.686 6.04407H12.8865V7.64307C12.9855 7.52607 13.0975 7.43757 13.225 7.37757C13.3722 7.32141 13.5284 7.29228 13.686 7.29157C13.837 7.29157 13.9855 7.31507 14.126 7.36957C14.2405 7.41657 14.3395 7.49207 14.4175 7.58857C14.4775 7.67207 14.5165 7.76807 14.5375 7.87007C14.5555 7.96107 14.566 8.15657 14.566 8.44807V9.81807L14.5695 9.81757ZM13.119 8.00807C13.041 8.00807 12.9915 8.03657 12.9705 8.08857C12.9495 8.14307 12.9315 8.28107 12.9315 8.50507V9.80207C12.9315 10.0181 12.9495 10.1591 12.9705 10.2186C12.9839 10.2467 13.0055 10.2702 13.0324 10.286C13.0593 10.3018 13.0903 10.3091 13.1215 10.3071C13.1995 10.3071 13.301 10.2756 13.322 10.2131C13.34 10.1481 13.3505 9.99957 13.3505 9.76507L13.3715 9.76257V8.50207C13.3715 8.30157 13.361 8.16357 13.3325 8.10107C13.301 8.03357 13.2025 8.00707 13.1215 8.00707L13.119 8.00807Z" fill="#FFD600"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_799_440">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.399963 0.539307)"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="movie-name">Oppenheimer 2023</p>
+                    </div>
+                    <div onclick="window.open('downloadPage.html', '_self')" class="movie__info-wrapper">
+                        <div class="movie__info">
+                            <img src="images/Home Page/action5.jpg" alt="movie image" class="movie-img">
+                            <div class="movie-caption">
+                                <p class="movie__content-title">خلاصه داستان</p>
+                                <p class="movie__content">فیلم اوپنهایمر Oppenheimer پدر بمب اتم به کارگردانی کریستوفر نولان است . فیلم بر اساس وقایع واقعی با روایت داستان جی رابرت اوپنهایمر است. اساس زندگینامه کای برد و مارتین جی شروین است. این فیلم قرار است در تاریخ 21 جولای 2023 در سینماهای ایالات متحده اکران شود. این فیلم برای اولین بار برای یونیورسال پیکچرز پخش می شود.</p>
+                                <div class="movie__content-wrapper">
+                                    <div class="movie-ageGroup">
+                                        <p class="movie__ageGroup-title">رده سنیی</p>
+                                        <p class="movie__ageGroup-content">TV-MA</p>
+                                    </div>
+                                    <div class="movie-swiper-genre">
+                                        <p class="movie__genre-title">ژانر</p>
+                                        <p class="movie__genre-content">اکشن، درام، هیجان انگیز، ماجراجویی</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-content">
+                                <span class="movie__time">2h 26m</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M7.99997 16.5393C5.87824 16.5393 3.84341 15.6965 2.34312 14.1962C0.842824 12.6959 -3.05176e-05 10.661 -3.05176e-05 8.53931C-3.05176e-05 6.41757 0.842824 4.38274 2.34312 2.88245C3.84341 1.38216 5.87824 0.539307 7.99997 0.539307C10.1217 0.539307 12.1565 1.38216 13.6568 2.88245C15.1571 4.38274 16 6.41757 16 8.53931C16 10.661 15.1571 12.6959 13.6568 14.1962C12.1565 15.6965 10.1217 16.5393 7.99997 16.5393ZM7.99997 14.9393C9.69736 14.9393 11.3252 14.265 12.5255 13.0648C13.7257 11.8646 14.4 10.2367 14.4 8.53931C14.4 6.84192 13.7257 5.21406 12.5255 4.01382C11.3252 2.81359 9.69736 2.13931 7.99997 2.13931C6.30258 2.13931 4.67472 2.81359 3.47449 4.01382C2.27425 5.21406 1.59997 6.84192 1.59997 8.53931C1.59997 10.2367 2.27425 11.8646 3.47449 13.0648C4.67472 14.265 6.30258 14.9393 7.99997 14.9393ZM7.19997 8.86731V3.73931H8.79997V8.21131L11.96 11.3713L10.832 12.4993L7.19997 8.86731Z" fill="#FFD600"></path>
+                                </svg>
+                                <span class="movie__imdb">8</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                    <g clip-path="url(#clip0_799_440)">
+                                    <path d="M9.93896 6.93207V6.93457C9.88946 6.90307 9.78796 6.88757 9.66046 6.88757V10.0986C9.83996 10.0986 9.95196 10.0571 9.99396 9.98657C10.0355 9.91907 10.0565 9.71857 10.0565 9.39807V7.48657C10.0565 7.26757 10.054 7.12707 10.0355 7.06707C10.02 7.00207 9.99096 6.95757 9.94146 6.93157L9.93896 6.93207ZM15.3425 0.539074H1.48046C1.20175 0.55511 0.938394 0.67203 0.739566 0.868006C0.540737 1.06398 0.420025 1.32562 0.399963 1.60407L0.399963 15.4581C0.438963 16.0416 0.873963 16.4866 1.43646 16.5361C1.44696 16.5386 1.45746 16.5386 1.46796 16.5386H15.364C15.6471 16.5102 15.9097 16.3779 16.1011 16.1673C16.2925 15.9567 16.3992 15.6827 16.4005 15.3981V1.67907C16.399 1.39109 16.2896 1.11412 16.0938 0.90294C15.8979 0.69176 15.63 0.561735 15.343 0.538574L15.3425 0.539074ZM3.59546 10.9556H2.32446V6.04657H3.59546V10.9556ZM7.95446 10.9556H6.84746V7.64057L6.39946 10.9531H5.60796L5.14196 7.71357L5.13696 10.9531H4.02746V6.04657H5.67046C5.72796 6.39307 5.77746 6.74457 5.82396 7.09607L6.00346 8.34107L6.30046 6.04657H7.95396L7.95446 10.9556ZM11.2725 9.50257C11.2725 9.93757 11.244 10.2316 11.202 10.3826C11.17 10.5187 11.0941 10.6404 10.986 10.7291C10.8769 10.8202 10.7459 10.8812 10.606 10.9061C10.4575 10.9346 10.226 10.9556 9.92646 10.9556L9.92396 10.9531H8.38746V6.04657H9.33796C9.94746 6.04657 10.304 6.07807 10.5175 6.13007C10.7335 6.19007 10.9005 6.28107 11.015 6.41157C11.1245 6.53157 11.1975 6.67957 11.2235 6.84107C11.2575 6.99757 11.273 7.31007 11.273 7.77607L11.2725 9.50257ZM14.5695 9.81757C14.5695 10.1171 14.538 10.3281 14.5095 10.4791C14.468 10.6276 14.3795 10.7471 14.2385 10.8566C14.0875 10.9686 13.918 11.0181 13.7175 11.0181C13.5715 11.0181 13.384 10.9766 13.2645 10.9271C13.1313 10.8563 13.0142 10.7587 12.9205 10.6406L12.845 10.9556H11.699V6.04657L11.686 6.04407H12.8865V7.64307C12.9855 7.52607 13.0975 7.43757 13.225 7.37757C13.3722 7.32141 13.5284 7.29228 13.686 7.29157C13.837 7.29157 13.9855 7.31507 14.126 7.36957C14.2405 7.41657 14.3395 7.49207 14.4175 7.58857C14.4775 7.67207 14.5165 7.76807 14.5375 7.87007C14.5555 7.96107 14.566 8.15657 14.566 8.44807V9.81807L14.5695 9.81757ZM13.119 8.00807C13.041 8.00807 12.9915 8.03657 12.9705 8.08857C12.9495 8.14307 12.9315 8.28107 12.9315 8.50507V9.80207C12.9315 10.0181 12.9495 10.1591 12.9705 10.2186C12.9839 10.2467 13.0055 10.2702 13.0324 10.286C13.0593 10.3018 13.0903 10.3091 13.1215 10.3071C13.1995 10.3071 13.301 10.2756 13.322 10.2131C13.34 10.1481 13.3505 9.99957 13.3505 9.76507L13.3715 9.76257V8.50207C13.3715 8.30157 13.361 8.16357 13.3325 8.10107C13.301 8.03357 13.2025 8.00707 13.1215 8.00707L13.119 8.00807Z" fill="#FFD600"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_799_440">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.399963 0.539307)"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="movie-name">Oppenheimer 2023</p>
+                    </div>
+                    <div onclick="window.open('downloadPage.html', '_self')" class="movie__info-wrapper">
+                        <div class="movie__info">
+                            <img src="images/Home Page/comedy1.jpg" alt="movie image" class="movie-img">
+                            <div class="movie-caption">
+                                <p class="movie__content-title">خلاصه داستان</p>
+                                <p class="movie__content">فیلم اوپنهایمر Oppenheimer پدر بمب اتم به کارگردانی کریستوفر نولان است . فیلم بر اساس وقایع واقعی با روایت داستان جی رابرت اوپنهایمر است. اساس زندگینامه کای برد و مارتین جی شروین است. این فیلم قرار است در تاریخ 21 جولای 2023 در سینماهای ایالات متحده اکران شود. این فیلم برای اولین بار برای یونیورسال پیکچرز پخش می شود.</p>
+                                <div class="movie__content-wrapper">
+                                    <div class="movie-ageGroup">
+                                        <p class="movie__ageGroup-title">رده سنیی</p>
+                                        <p class="movie__ageGroup-content">TV-MA</p>
+                                    </div>
+                                    <div class="movie-swiper-genre">
+                                        <p class="movie__genre-title">ژانر</p>
+                                        <p class="movie__genre-content">اکشن، درام، هیجان انگیز، ماجراجویی</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-content">
+                                <span class="movie__time">2h 26m</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M7.99997 16.5393C5.87824 16.5393 3.84341 15.6965 2.34312 14.1962C0.842824 12.6959 -3.05176e-05 10.661 -3.05176e-05 8.53931C-3.05176e-05 6.41757 0.842824 4.38274 2.34312 2.88245C3.84341 1.38216 5.87824 0.539307 7.99997 0.539307C10.1217 0.539307 12.1565 1.38216 13.6568 2.88245C15.1571 4.38274 16 6.41757 16 8.53931C16 10.661 15.1571 12.6959 13.6568 14.1962C12.1565 15.6965 10.1217 16.5393 7.99997 16.5393ZM7.99997 14.9393C9.69736 14.9393 11.3252 14.265 12.5255 13.0648C13.7257 11.8646 14.4 10.2367 14.4 8.53931C14.4 6.84192 13.7257 5.21406 12.5255 4.01382C11.3252 2.81359 9.69736 2.13931 7.99997 2.13931C6.30258 2.13931 4.67472 2.81359 3.47449 4.01382C2.27425 5.21406 1.59997 6.84192 1.59997 8.53931C1.59997 10.2367 2.27425 11.8646 3.47449 13.0648C4.67472 14.265 6.30258 14.9393 7.99997 14.9393ZM7.19997 8.86731V3.73931H8.79997V8.21131L11.96 11.3713L10.832 12.4993L7.19997 8.86731Z" fill="#FFD600"></path>
+                                </svg>
+                                <span class="movie__imdb">8</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                    <g clip-path="url(#clip0_799_440)">
+                                    <path d="M9.93896 6.93207V6.93457C9.88946 6.90307 9.78796 6.88757 9.66046 6.88757V10.0986C9.83996 10.0986 9.95196 10.0571 9.99396 9.98657C10.0355 9.91907 10.0565 9.71857 10.0565 9.39807V7.48657C10.0565 7.26757 10.054 7.12707 10.0355 7.06707C10.02 7.00207 9.99096 6.95757 9.94146 6.93157L9.93896 6.93207ZM15.3425 0.539074H1.48046C1.20175 0.55511 0.938394 0.67203 0.739566 0.868006C0.540737 1.06398 0.420025 1.32562 0.399963 1.60407L0.399963 15.4581C0.438963 16.0416 0.873963 16.4866 1.43646 16.5361C1.44696 16.5386 1.45746 16.5386 1.46796 16.5386H15.364C15.6471 16.5102 15.9097 16.3779 16.1011 16.1673C16.2925 15.9567 16.3992 15.6827 16.4005 15.3981V1.67907C16.399 1.39109 16.2896 1.11412 16.0938 0.90294C15.8979 0.69176 15.63 0.561735 15.343 0.538574L15.3425 0.539074ZM3.59546 10.9556H2.32446V6.04657H3.59546V10.9556ZM7.95446 10.9556H6.84746V7.64057L6.39946 10.9531H5.60796L5.14196 7.71357L5.13696 10.9531H4.02746V6.04657H5.67046C5.72796 6.39307 5.77746 6.74457 5.82396 7.09607L6.00346 8.34107L6.30046 6.04657H7.95396L7.95446 10.9556ZM11.2725 9.50257C11.2725 9.93757 11.244 10.2316 11.202 10.3826C11.17 10.5187 11.0941 10.6404 10.986 10.7291C10.8769 10.8202 10.7459 10.8812 10.606 10.9061C10.4575 10.9346 10.226 10.9556 9.92646 10.9556L9.92396 10.9531H8.38746V6.04657H9.33796C9.94746 6.04657 10.304 6.07807 10.5175 6.13007C10.7335 6.19007 10.9005 6.28107 11.015 6.41157C11.1245 6.53157 11.1975 6.67957 11.2235 6.84107C11.2575 6.99757 11.273 7.31007 11.273 7.77607L11.2725 9.50257ZM14.5695 9.81757C14.5695 10.1171 14.538 10.3281 14.5095 10.4791C14.468 10.6276 14.3795 10.7471 14.2385 10.8566C14.0875 10.9686 13.918 11.0181 13.7175 11.0181C13.5715 11.0181 13.384 10.9766 13.2645 10.9271C13.1313 10.8563 13.0142 10.7587 12.9205 10.6406L12.845 10.9556H11.699V6.04657L11.686 6.04407H12.8865V7.64307C12.9855 7.52607 13.0975 7.43757 13.225 7.37757C13.3722 7.32141 13.5284 7.29228 13.686 7.29157C13.837 7.29157 13.9855 7.31507 14.126 7.36957C14.2405 7.41657 14.3395 7.49207 14.4175 7.58857C14.4775 7.67207 14.5165 7.76807 14.5375 7.87007C14.5555 7.96107 14.566 8.15657 14.566 8.44807V9.81807L14.5695 9.81757ZM13.119 8.00807C13.041 8.00807 12.9915 8.03657 12.9705 8.08857C12.9495 8.14307 12.9315 8.28107 12.9315 8.50507V9.80207C12.9315 10.0181 12.9495 10.1591 12.9705 10.2186C12.9839 10.2467 13.0055 10.2702 13.0324 10.286C13.0593 10.3018 13.0903 10.3091 13.1215 10.3071C13.1995 10.3071 13.301 10.2756 13.322 10.2131C13.34 10.1481 13.3505 9.99957 13.3505 9.76507L13.3715 9.76257V8.50207C13.3715 8.30157 13.361 8.16357 13.3325 8.10107C13.301 8.03357 13.2025 8.00707 13.1215 8.00707L13.119 8.00807Z" fill="#FFD600"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_799_440">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.399963 0.539307)"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="movie-name">Oppenheimer 2023</p>
+                    </div>
+                    <div onclick="window.open('downloadPage.html', '_self')" class="movie__info-wrapper">
+                        <div class="movie__info">
+                            <img src="images/Home Page/comedy2.jpg" alt="movie image" class="movie-img">
+                            <div class="movie-caption">
+                                <p class="movie__content-title">خلاصه داستان</p>
+                                <p class="movie__content">فیلم اوپنهایمر Oppenheimer پدر بمب اتم به کارگردانی کریستوفر نولان است . فیلم بر اساس وقایع واقعی با روایت داستان جی رابرت اوپنهایمر است. اساس زندگینامه کای برد و مارتین جی شروین است. این فیلم قرار است در تاریخ 21 جولای 2023 در سینماهای ایالات متحده اکران شود. این فیلم برای اولین بار برای یونیورسال پیکچرز پخش می شود.</p>
+                                <div class="movie__content-wrapper">
+                                    <div class="movie-ageGroup">
+                                        <p class="movie__ageGroup-title">رده سنیی</p>
+                                        <p class="movie__ageGroup-content">TV-MA</p>
+                                    </div>
+                                    <div class="movie-swiper-genre">
+                                        <p class="movie__genre-title">ژانر</p>
+                                        <p class="movie__genre-content">اکشن، درام، هیجان انگیز، ماجراجویی</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-content">
+                                <span class="movie__time">2h 26m</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M7.99997 16.5393C5.87824 16.5393 3.84341 15.6965 2.34312 14.1962C0.842824 12.6959 -3.05176e-05 10.661 -3.05176e-05 8.53931C-3.05176e-05 6.41757 0.842824 4.38274 2.34312 2.88245C3.84341 1.38216 5.87824 0.539307 7.99997 0.539307C10.1217 0.539307 12.1565 1.38216 13.6568 2.88245C15.1571 4.38274 16 6.41757 16 8.53931C16 10.661 15.1571 12.6959 13.6568 14.1962C12.1565 15.6965 10.1217 16.5393 7.99997 16.5393ZM7.99997 14.9393C9.69736 14.9393 11.3252 14.265 12.5255 13.0648C13.7257 11.8646 14.4 10.2367 14.4 8.53931C14.4 6.84192 13.7257 5.21406 12.5255 4.01382C11.3252 2.81359 9.69736 2.13931 7.99997 2.13931C6.30258 2.13931 4.67472 2.81359 3.47449 4.01382C2.27425 5.21406 1.59997 6.84192 1.59997 8.53931C1.59997 10.2367 2.27425 11.8646 3.47449 13.0648C4.67472 14.265 6.30258 14.9393 7.99997 14.9393ZM7.19997 8.86731V3.73931H8.79997V8.21131L11.96 11.3713L10.832 12.4993L7.19997 8.86731Z" fill="#FFD600"></path>
+                                </svg>
+                                <span class="movie__imdb">8</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                    <g clip-path="url(#clip0_799_440)">
+                                    <path d="M9.93896 6.93207V6.93457C9.88946 6.90307 9.78796 6.88757 9.66046 6.88757V10.0986C9.83996 10.0986 9.95196 10.0571 9.99396 9.98657C10.0355 9.91907 10.0565 9.71857 10.0565 9.39807V7.48657C10.0565 7.26757 10.054 7.12707 10.0355 7.06707C10.02 7.00207 9.99096 6.95757 9.94146 6.93157L9.93896 6.93207ZM15.3425 0.539074H1.48046C1.20175 0.55511 0.938394 0.67203 0.739566 0.868006C0.540737 1.06398 0.420025 1.32562 0.399963 1.60407L0.399963 15.4581C0.438963 16.0416 0.873963 16.4866 1.43646 16.5361C1.44696 16.5386 1.45746 16.5386 1.46796 16.5386H15.364C15.6471 16.5102 15.9097 16.3779 16.1011 16.1673C16.2925 15.9567 16.3992 15.6827 16.4005 15.3981V1.67907C16.399 1.39109 16.2896 1.11412 16.0938 0.90294C15.8979 0.69176 15.63 0.561735 15.343 0.538574L15.3425 0.539074ZM3.59546 10.9556H2.32446V6.04657H3.59546V10.9556ZM7.95446 10.9556H6.84746V7.64057L6.39946 10.9531H5.60796L5.14196 7.71357L5.13696 10.9531H4.02746V6.04657H5.67046C5.72796 6.39307 5.77746 6.74457 5.82396 7.09607L6.00346 8.34107L6.30046 6.04657H7.95396L7.95446 10.9556ZM11.2725 9.50257C11.2725 9.93757 11.244 10.2316 11.202 10.3826C11.17 10.5187 11.0941 10.6404 10.986 10.7291C10.8769 10.8202 10.7459 10.8812 10.606 10.9061C10.4575 10.9346 10.226 10.9556 9.92646 10.9556L9.92396 10.9531H8.38746V6.04657H9.33796C9.94746 6.04657 10.304 6.07807 10.5175 6.13007C10.7335 6.19007 10.9005 6.28107 11.015 6.41157C11.1245 6.53157 11.1975 6.67957 11.2235 6.84107C11.2575 6.99757 11.273 7.31007 11.273 7.77607L11.2725 9.50257ZM14.5695 9.81757C14.5695 10.1171 14.538 10.3281 14.5095 10.4791C14.468 10.6276 14.3795 10.7471 14.2385 10.8566C14.0875 10.9686 13.918 11.0181 13.7175 11.0181C13.5715 11.0181 13.384 10.9766 13.2645 10.9271C13.1313 10.8563 13.0142 10.7587 12.9205 10.6406L12.845 10.9556H11.699V6.04657L11.686 6.04407H12.8865V7.64307C12.9855 7.52607 13.0975 7.43757 13.225 7.37757C13.3722 7.32141 13.5284 7.29228 13.686 7.29157C13.837 7.29157 13.9855 7.31507 14.126 7.36957C14.2405 7.41657 14.3395 7.49207 14.4175 7.58857C14.4775 7.67207 14.5165 7.76807 14.5375 7.87007C14.5555 7.96107 14.566 8.15657 14.566 8.44807V9.81807L14.5695 9.81757ZM13.119 8.00807C13.041 8.00807 12.9915 8.03657 12.9705 8.08857C12.9495 8.14307 12.9315 8.28107 12.9315 8.50507V9.80207C12.9315 10.0181 12.9495 10.1591 12.9705 10.2186C12.9839 10.2467 13.0055 10.2702 13.0324 10.286C13.0593 10.3018 13.0903 10.3091 13.1215 10.3071C13.1995 10.3071 13.301 10.2756 13.322 10.2131C13.34 10.1481 13.3505 9.99957 13.3505 9.76507L13.3715 9.76257V8.50207C13.3715 8.30157 13.361 8.16357 13.3325 8.10107C13.301 8.03357 13.2025 8.00707 13.1215 8.00707L13.119 8.00807Z" fill="#FFD600"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_799_440">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.399963 0.539307)"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="movie-name">Oppenheimer 2023</p>
+                    </div>
+                    <div onclick="window.open('downloadPage.html', '_self')" class="movie__info-wrapper">
+                        <div class="movie__info">
+                            <img src="images/Home Page/comedy3.jpg" alt="movie image" class="movie-img">
+                            <div class="movie-caption">
+                                <p class="movie__content-title">خلاصه داستان</p>
+                                <p class="movie__content">فیلم اوپنهایمر Oppenheimer پدر بمب اتم به کارگردانی کریستوفر نولان است . فیلم بر اساس وقایع واقعی با روایت داستان جی رابرت اوپنهایمر است. اساس زندگینامه کای برد و مارتین جی شروین است. این فیلم قرار است در تاریخ 21 جولای 2023 در سینماهای ایالات متحده اکران شود. این فیلم برای اولین بار برای یونیورسال پیکچرز پخش می شود.</p>
+                                <div class="movie__content-wrapper">
+                                    <div class="movie-ageGroup">
+                                        <p class="movie__ageGroup-title">رده سنیی</p>
+                                        <p class="movie__ageGroup-content">TV-MA</p>
+                                    </div>
+                                    <div class="movie-swiper-genre">
+                                        <p class="movie__genre-title">ژانر</p>
+                                        <p class="movie__genre-content">اکشن، درام، هیجان انگیز، ماجراجویی</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-content">
+                                <span class="movie__time">2h 26m</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M7.99997 16.5393C5.87824 16.5393 3.84341 15.6965 2.34312 14.1962C0.842824 12.6959 -3.05176e-05 10.661 -3.05176e-05 8.53931C-3.05176e-05 6.41757 0.842824 4.38274 2.34312 2.88245C3.84341 1.38216 5.87824 0.539307 7.99997 0.539307C10.1217 0.539307 12.1565 1.38216 13.6568 2.88245C15.1571 4.38274 16 6.41757 16 8.53931C16 10.661 15.1571 12.6959 13.6568 14.1962C12.1565 15.6965 10.1217 16.5393 7.99997 16.5393ZM7.99997 14.9393C9.69736 14.9393 11.3252 14.265 12.5255 13.0648C13.7257 11.8646 14.4 10.2367 14.4 8.53931C14.4 6.84192 13.7257 5.21406 12.5255 4.01382C11.3252 2.81359 9.69736 2.13931 7.99997 2.13931C6.30258 2.13931 4.67472 2.81359 3.47449 4.01382C2.27425 5.21406 1.59997 6.84192 1.59997 8.53931C1.59997 10.2367 2.27425 11.8646 3.47449 13.0648C4.67472 14.265 6.30258 14.9393 7.99997 14.9393ZM7.19997 8.86731V3.73931H8.79997V8.21131L11.96 11.3713L10.832 12.4993L7.19997 8.86731Z" fill="#FFD600"></path>
+                                </svg>
+                                <span class="movie__imdb">8</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                    <g clip-path="url(#clip0_799_440)">
+                                    <path d="M9.93896 6.93207V6.93457C9.88946 6.90307 9.78796 6.88757 9.66046 6.88757V10.0986C9.83996 10.0986 9.95196 10.0571 9.99396 9.98657C10.0355 9.91907 10.0565 9.71857 10.0565 9.39807V7.48657C10.0565 7.26757 10.054 7.12707 10.0355 7.06707C10.02 7.00207 9.99096 6.95757 9.94146 6.93157L9.93896 6.93207ZM15.3425 0.539074H1.48046C1.20175 0.55511 0.938394 0.67203 0.739566 0.868006C0.540737 1.06398 0.420025 1.32562 0.399963 1.60407L0.399963 15.4581C0.438963 16.0416 0.873963 16.4866 1.43646 16.5361C1.44696 16.5386 1.45746 16.5386 1.46796 16.5386H15.364C15.6471 16.5102 15.9097 16.3779 16.1011 16.1673C16.2925 15.9567 16.3992 15.6827 16.4005 15.3981V1.67907C16.399 1.39109 16.2896 1.11412 16.0938 0.90294C15.8979 0.69176 15.63 0.561735 15.343 0.538574L15.3425 0.539074ZM3.59546 10.9556H2.32446V6.04657H3.59546V10.9556ZM7.95446 10.9556H6.84746V7.64057L6.39946 10.9531H5.60796L5.14196 7.71357L5.13696 10.9531H4.02746V6.04657H5.67046C5.72796 6.39307 5.77746 6.74457 5.82396 7.09607L6.00346 8.34107L6.30046 6.04657H7.95396L7.95446 10.9556ZM11.2725 9.50257C11.2725 9.93757 11.244 10.2316 11.202 10.3826C11.17 10.5187 11.0941 10.6404 10.986 10.7291C10.8769 10.8202 10.7459 10.8812 10.606 10.9061C10.4575 10.9346 10.226 10.9556 9.92646 10.9556L9.92396 10.9531H8.38746V6.04657H9.33796C9.94746 6.04657 10.304 6.07807 10.5175 6.13007C10.7335 6.19007 10.9005 6.28107 11.015 6.41157C11.1245 6.53157 11.1975 6.67957 11.2235 6.84107C11.2575 6.99757 11.273 7.31007 11.273 7.77607L11.2725 9.50257ZM14.5695 9.81757C14.5695 10.1171 14.538 10.3281 14.5095 10.4791C14.468 10.6276 14.3795 10.7471 14.2385 10.8566C14.0875 10.9686 13.918 11.0181 13.7175 11.0181C13.5715 11.0181 13.384 10.9766 13.2645 10.9271C13.1313 10.8563 13.0142 10.7587 12.9205 10.6406L12.845 10.9556H11.699V6.04657L11.686 6.04407H12.8865V7.64307C12.9855 7.52607 13.0975 7.43757 13.225 7.37757C13.3722 7.32141 13.5284 7.29228 13.686 7.29157C13.837 7.29157 13.9855 7.31507 14.126 7.36957C14.2405 7.41657 14.3395 7.49207 14.4175 7.58857C14.4775 7.67207 14.5165 7.76807 14.5375 7.87007C14.5555 7.96107 14.566 8.15657 14.566 8.44807V9.81807L14.5695 9.81757ZM13.119 8.00807C13.041 8.00807 12.9915 8.03657 12.9705 8.08857C12.9495 8.14307 12.9315 8.28107 12.9315 8.50507V9.80207C12.9315 10.0181 12.9495 10.1591 12.9705 10.2186C12.9839 10.2467 13.0055 10.2702 13.0324 10.286C13.0593 10.3018 13.0903 10.3091 13.1215 10.3071C13.1995 10.3071 13.301 10.2756 13.322 10.2131C13.34 10.1481 13.3505 9.99957 13.3505 9.76507L13.3715 9.76257V8.50207C13.3715 8.30157 13.361 8.16357 13.3325 8.10107C13.301 8.03357 13.2025 8.00707 13.1215 8.00707L13.119 8.00807Z" fill="#FFD600"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_799_440">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.399963 0.539307)"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="movie-name">Oppenheimer 2023</p>
+                    </div>
+                    <div onclick="window.open('downloadPage.html', '_self')" class="movie__info-wrapper">
+                        <div class="movie__info">
+                            <img src="images/Home Page/comedy4.jpg" alt="movie image" class="movie-img">
+                            <div class="movie-caption">
+                                <p class="movie__content-title">خلاصه داستان</p>
+                                <p class="movie__content">فیلم اوپنهایمر Oppenheimer پدر بمب اتم به کارگردانی کریستوفر نولان است . فیلم بر اساس وقایع واقعی با روایت داستان جی رابرت اوپنهایمر است. اساس زندگینامه کای برد و مارتین جی شروین است. این فیلم قرار است در تاریخ 21 جولای 2023 در سینماهای ایالات متحده اکران شود. این فیلم برای اولین بار برای یونیورسال پیکچرز پخش می شود.</p>
+                                <div class="movie__content-wrapper">
+                                    <div class="movie-ageGroup">
+                                        <p class="movie__ageGroup-title">رده سنیی</p>
+                                        <p class="movie__ageGroup-content">TV-MA</p>
+                                    </div>
+                                    <div class="movie-swiper-genre">
+                                        <p class="movie__genre-title">ژانر</p>
+                                        <p class="movie__genre-content">اکشن، درام، هیجان انگیز، ماجراجویی</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-content">
+                                <span class="movie__time">2h 26m</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M7.99997 16.5393C5.87824 16.5393 3.84341 15.6965 2.34312 14.1962C0.842824 12.6959 -3.05176e-05 10.661 -3.05176e-05 8.53931C-3.05176e-05 6.41757 0.842824 4.38274 2.34312 2.88245C3.84341 1.38216 5.87824 0.539307 7.99997 0.539307C10.1217 0.539307 12.1565 1.38216 13.6568 2.88245C15.1571 4.38274 16 6.41757 16 8.53931C16 10.661 15.1571 12.6959 13.6568 14.1962C12.1565 15.6965 10.1217 16.5393 7.99997 16.5393ZM7.99997 14.9393C9.69736 14.9393 11.3252 14.265 12.5255 13.0648C13.7257 11.8646 14.4 10.2367 14.4 8.53931C14.4 6.84192 13.7257 5.21406 12.5255 4.01382C11.3252 2.81359 9.69736 2.13931 7.99997 2.13931C6.30258 2.13931 4.67472 2.81359 3.47449 4.01382C2.27425 5.21406 1.59997 6.84192 1.59997 8.53931C1.59997 10.2367 2.27425 11.8646 3.47449 13.0648C4.67472 14.265 6.30258 14.9393 7.99997 14.9393ZM7.19997 8.86731V3.73931H8.79997V8.21131L11.96 11.3713L10.832 12.4993L7.19997 8.86731Z" fill="#FFD600"></path>
+                                </svg>
+                                <span class="movie__imdb">8</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                    <g clip-path="url(#clip0_799_440)">
+                                    <path d="M9.93896 6.93207V6.93457C9.88946 6.90307 9.78796 6.88757 9.66046 6.88757V10.0986C9.83996 10.0986 9.95196 10.0571 9.99396 9.98657C10.0355 9.91907 10.0565 9.71857 10.0565 9.39807V7.48657C10.0565 7.26757 10.054 7.12707 10.0355 7.06707C10.02 7.00207 9.99096 6.95757 9.94146 6.93157L9.93896 6.93207ZM15.3425 0.539074H1.48046C1.20175 0.55511 0.938394 0.67203 0.739566 0.868006C0.540737 1.06398 0.420025 1.32562 0.399963 1.60407L0.399963 15.4581C0.438963 16.0416 0.873963 16.4866 1.43646 16.5361C1.44696 16.5386 1.45746 16.5386 1.46796 16.5386H15.364C15.6471 16.5102 15.9097 16.3779 16.1011 16.1673C16.2925 15.9567 16.3992 15.6827 16.4005 15.3981V1.67907C16.399 1.39109 16.2896 1.11412 16.0938 0.90294C15.8979 0.69176 15.63 0.561735 15.343 0.538574L15.3425 0.539074ZM3.59546 10.9556H2.32446V6.04657H3.59546V10.9556ZM7.95446 10.9556H6.84746V7.64057L6.39946 10.9531H5.60796L5.14196 7.71357L5.13696 10.9531H4.02746V6.04657H5.67046C5.72796 6.39307 5.77746 6.74457 5.82396 7.09607L6.00346 8.34107L6.30046 6.04657H7.95396L7.95446 10.9556ZM11.2725 9.50257C11.2725 9.93757 11.244 10.2316 11.202 10.3826C11.17 10.5187 11.0941 10.6404 10.986 10.7291C10.8769 10.8202 10.7459 10.8812 10.606 10.9061C10.4575 10.9346 10.226 10.9556 9.92646 10.9556L9.92396 10.9531H8.38746V6.04657H9.33796C9.94746 6.04657 10.304 6.07807 10.5175 6.13007C10.7335 6.19007 10.9005 6.28107 11.015 6.41157C11.1245 6.53157 11.1975 6.67957 11.2235 6.84107C11.2575 6.99757 11.273 7.31007 11.273 7.77607L11.2725 9.50257ZM14.5695 9.81757C14.5695 10.1171 14.538 10.3281 14.5095 10.4791C14.468 10.6276 14.3795 10.7471 14.2385 10.8566C14.0875 10.9686 13.918 11.0181 13.7175 11.0181C13.5715 11.0181 13.384 10.9766 13.2645 10.9271C13.1313 10.8563 13.0142 10.7587 12.9205 10.6406L12.845 10.9556H11.699V6.04657L11.686 6.04407H12.8865V7.64307C12.9855 7.52607 13.0975 7.43757 13.225 7.37757C13.3722 7.32141 13.5284 7.29228 13.686 7.29157C13.837 7.29157 13.9855 7.31507 14.126 7.36957C14.2405 7.41657 14.3395 7.49207 14.4175 7.58857C14.4775 7.67207 14.5165 7.76807 14.5375 7.87007C14.5555 7.96107 14.566 8.15657 14.566 8.44807V9.81807L14.5695 9.81757ZM13.119 8.00807C13.041 8.00807 12.9915 8.03657 12.9705 8.08857C12.9495 8.14307 12.9315 8.28107 12.9315 8.50507V9.80207C12.9315 10.0181 12.9495 10.1591 12.9705 10.2186C12.9839 10.2467 13.0055 10.2702 13.0324 10.286C13.0593 10.3018 13.0903 10.3091 13.1215 10.3071C13.1995 10.3071 13.301 10.2756 13.322 10.2131C13.34 10.1481 13.3505 9.99957 13.3505 9.76507L13.3715 9.76257V8.50207C13.3715 8.30157 13.361 8.16357 13.3325 8.10107C13.301 8.03357 13.2025 8.00707 13.1215 8.00707L13.119 8.00807Z" fill="#FFD600"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_799_440">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.399963 0.539307)"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="movie-name">Oppenheimer 2023</p>
+                    </div>
+                    <div onclick="window.open('downloadPage.html', '_self')" class="movie__info-wrapper">
+                        <div class="movie__info">
+                            <img src="images/Home Page/comedy5.jpg" alt="movie image" class="movie-img">
+                            <div class="movie-caption">
+                                <p class="movie__content-title">خلاصه داستان</p>
+                                <p class="movie__content">فیلم اوپنهایمر Oppenheimer پدر بمب اتم به کارگردانی کریستوفر نولان است . فیلم بر اساس وقایع واقعی با روایت داستان جی رابرت اوپنهایمر است. اساس زندگینامه کای برد و مارتین جی شروین است. این فیلم قرار است در تاریخ 21 جولای 2023 در سینماهای ایالات متحده اکران شود. این فیلم برای اولین بار برای یونیورسال پیکچرز پخش می شود.</p>
+                                <div class="movie__content-wrapper">
+                                    <div class="movie-ageGroup">
+                                        <p class="movie__ageGroup-title">رده سنیی</p>
+                                        <p class="movie__ageGroup-content">TV-MA</p>
+                                    </div>
+                                    <div class="movie-swiper-genre">
+                                        <p class="movie__genre-title">ژانر</p>
+                                        <p class="movie__genre-content">اکشن، درام، هیجان انگیز، ماجراجویی</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-content">
+                                <span class="movie__time">2h 26m</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M7.99997 16.5393C5.87824 16.5393 3.84341 15.6965 2.34312 14.1962C0.842824 12.6959 -3.05176e-05 10.661 -3.05176e-05 8.53931C-3.05176e-05 6.41757 0.842824 4.38274 2.34312 2.88245C3.84341 1.38216 5.87824 0.539307 7.99997 0.539307C10.1217 0.539307 12.1565 1.38216 13.6568 2.88245C15.1571 4.38274 16 6.41757 16 8.53931C16 10.661 15.1571 12.6959 13.6568 14.1962C12.1565 15.6965 10.1217 16.5393 7.99997 16.5393ZM7.99997 14.9393C9.69736 14.9393 11.3252 14.265 12.5255 13.0648C13.7257 11.8646 14.4 10.2367 14.4 8.53931C14.4 6.84192 13.7257 5.21406 12.5255 4.01382C11.3252 2.81359 9.69736 2.13931 7.99997 2.13931C6.30258 2.13931 4.67472 2.81359 3.47449 4.01382C2.27425 5.21406 1.59997 6.84192 1.59997 8.53931C1.59997 10.2367 2.27425 11.8646 3.47449 13.0648C4.67472 14.265 6.30258 14.9393 7.99997 14.9393ZM7.19997 8.86731V3.73931H8.79997V8.21131L11.96 11.3713L10.832 12.4993L7.19997 8.86731Z" fill="#FFD600"></path>
+                                </svg>
+                                <span class="movie__imdb">8</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                    <g clip-path="url(#clip0_799_440)">
+                                    <path d="M9.93896 6.93207V6.93457C9.88946 6.90307 9.78796 6.88757 9.66046 6.88757V10.0986C9.83996 10.0986 9.95196 10.0571 9.99396 9.98657C10.0355 9.91907 10.0565 9.71857 10.0565 9.39807V7.48657C10.0565 7.26757 10.054 7.12707 10.0355 7.06707C10.02 7.00207 9.99096 6.95757 9.94146 6.93157L9.93896 6.93207ZM15.3425 0.539074H1.48046C1.20175 0.55511 0.938394 0.67203 0.739566 0.868006C0.540737 1.06398 0.420025 1.32562 0.399963 1.60407L0.399963 15.4581C0.438963 16.0416 0.873963 16.4866 1.43646 16.5361C1.44696 16.5386 1.45746 16.5386 1.46796 16.5386H15.364C15.6471 16.5102 15.9097 16.3779 16.1011 16.1673C16.2925 15.9567 16.3992 15.6827 16.4005 15.3981V1.67907C16.399 1.39109 16.2896 1.11412 16.0938 0.90294C15.8979 0.69176 15.63 0.561735 15.343 0.538574L15.3425 0.539074ZM3.59546 10.9556H2.32446V6.04657H3.59546V10.9556ZM7.95446 10.9556H6.84746V7.64057L6.39946 10.9531H5.60796L5.14196 7.71357L5.13696 10.9531H4.02746V6.04657H5.67046C5.72796 6.39307 5.77746 6.74457 5.82396 7.09607L6.00346 8.34107L6.30046 6.04657H7.95396L7.95446 10.9556ZM11.2725 9.50257C11.2725 9.93757 11.244 10.2316 11.202 10.3826C11.17 10.5187 11.0941 10.6404 10.986 10.7291C10.8769 10.8202 10.7459 10.8812 10.606 10.9061C10.4575 10.9346 10.226 10.9556 9.92646 10.9556L9.92396 10.9531H8.38746V6.04657H9.33796C9.94746 6.04657 10.304 6.07807 10.5175 6.13007C10.7335 6.19007 10.9005 6.28107 11.015 6.41157C11.1245 6.53157 11.1975 6.67957 11.2235 6.84107C11.2575 6.99757 11.273 7.31007 11.273 7.77607L11.2725 9.50257ZM14.5695 9.81757C14.5695 10.1171 14.538 10.3281 14.5095 10.4791C14.468 10.6276 14.3795 10.7471 14.2385 10.8566C14.0875 10.9686 13.918 11.0181 13.7175 11.0181C13.5715 11.0181 13.384 10.9766 13.2645 10.9271C13.1313 10.8563 13.0142 10.7587 12.9205 10.6406L12.845 10.9556H11.699V6.04657L11.686 6.04407H12.8865V7.64307C12.9855 7.52607 13.0975 7.43757 13.225 7.37757C13.3722 7.32141 13.5284 7.29228 13.686 7.29157C13.837 7.29157 13.9855 7.31507 14.126 7.36957C14.2405 7.41657 14.3395 7.49207 14.4175 7.58857C14.4775 7.67207 14.5165 7.76807 14.5375 7.87007C14.5555 7.96107 14.566 8.15657 14.566 8.44807V9.81807L14.5695 9.81757ZM13.119 8.00807C13.041 8.00807 12.9915 8.03657 12.9705 8.08857C12.9495 8.14307 12.9315 8.28107 12.9315 8.50507V9.80207C12.9315 10.0181 12.9495 10.1591 12.9705 10.2186C12.9839 10.2467 13.0055 10.2702 13.0324 10.286C13.0593 10.3018 13.0903 10.3091 13.1215 10.3071C13.1995 10.3071 13.301 10.2756 13.322 10.2131C13.34 10.1481 13.3505 9.99957 13.3505 9.76507L13.3715 9.76257V8.50207C13.3715 8.30157 13.361 8.16357 13.3325 8.10107C13.301 8.03357 13.2025 8.00707 13.1215 8.00707L13.119 8.00807Z" fill="#FFD600"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_799_440">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.399963 0.539307)"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="movie-name">Oppenheimer 2023</p>
+                    </div>
+                    <div onclick="window.open('downloadPage.html', '_self')" class="movie__info-wrapper">
+                        <div class="movie__info">
+                            <img src="images/Home Page/dram1.jpg" alt="movie image" class="movie-img">
+                            <div class="movie-caption">
+                                <p class="movie__content-title">خلاصه داستان</p>
+                                <p class="movie__content">فیلم اوپنهایمر Oppenheimer پدر بمب اتم به کارگردانی کریستوفر نولان است . فیلم بر اساس وقایع واقعی با روایت داستان جی رابرت اوپنهایمر است. اساس زندگینامه کای برد و مارتین جی شروین است. این فیلم قرار است در تاریخ 21 جولای 2023 در سینماهای ایالات متحده اکران شود. این فیلم برای اولین بار برای یونیورسال پیکچرز پخش می شود.</p>
+                                <div class="movie__content-wrapper">
+                                    <div class="movie-ageGroup">
+                                        <p class="movie__ageGroup-title">رده سنیی</p>
+                                        <p class="movie__ageGroup-content">TV-MA</p>
+                                    </div>
+                                    <div class="movie-swiper-genre">
+                                        <p class="movie__genre-title">ژانر</p>
+                                        <p class="movie__genre-content">اکشن، درام، هیجان انگیز، ماجراجویی</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-content">
+                                <span class="movie__time">2h 26m</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M7.99997 16.5393C5.87824 16.5393 3.84341 15.6965 2.34312 14.1962C0.842824 12.6959 -3.05176e-05 10.661 -3.05176e-05 8.53931C-3.05176e-05 6.41757 0.842824 4.38274 2.34312 2.88245C3.84341 1.38216 5.87824 0.539307 7.99997 0.539307C10.1217 0.539307 12.1565 1.38216 13.6568 2.88245C15.1571 4.38274 16 6.41757 16 8.53931C16 10.661 15.1571 12.6959 13.6568 14.1962C12.1565 15.6965 10.1217 16.5393 7.99997 16.5393ZM7.99997 14.9393C9.69736 14.9393 11.3252 14.265 12.5255 13.0648C13.7257 11.8646 14.4 10.2367 14.4 8.53931C14.4 6.84192 13.7257 5.21406 12.5255 4.01382C11.3252 2.81359 9.69736 2.13931 7.99997 2.13931C6.30258 2.13931 4.67472 2.81359 3.47449 4.01382C2.27425 5.21406 1.59997 6.84192 1.59997 8.53931C1.59997 10.2367 2.27425 11.8646 3.47449 13.0648C4.67472 14.265 6.30258 14.9393 7.99997 14.9393ZM7.19997 8.86731V3.73931H8.79997V8.21131L11.96 11.3713L10.832 12.4993L7.19997 8.86731Z" fill="#FFD600"></path>
+                                </svg>
+                                <span class="movie__imdb">8</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                    <g clip-path="url(#clip0_799_440)">
+                                    <path d="M9.93896 6.93207V6.93457C9.88946 6.90307 9.78796 6.88757 9.66046 6.88757V10.0986C9.83996 10.0986 9.95196 10.0571 9.99396 9.98657C10.0355 9.91907 10.0565 9.71857 10.0565 9.39807V7.48657C10.0565 7.26757 10.054 7.12707 10.0355 7.06707C10.02 7.00207 9.99096 6.95757 9.94146 6.93157L9.93896 6.93207ZM15.3425 0.539074H1.48046C1.20175 0.55511 0.938394 0.67203 0.739566 0.868006C0.540737 1.06398 0.420025 1.32562 0.399963 1.60407L0.399963 15.4581C0.438963 16.0416 0.873963 16.4866 1.43646 16.5361C1.44696 16.5386 1.45746 16.5386 1.46796 16.5386H15.364C15.6471 16.5102 15.9097 16.3779 16.1011 16.1673C16.2925 15.9567 16.3992 15.6827 16.4005 15.3981V1.67907C16.399 1.39109 16.2896 1.11412 16.0938 0.90294C15.8979 0.69176 15.63 0.561735 15.343 0.538574L15.3425 0.539074ZM3.59546 10.9556H2.32446V6.04657H3.59546V10.9556ZM7.95446 10.9556H6.84746V7.64057L6.39946 10.9531H5.60796L5.14196 7.71357L5.13696 10.9531H4.02746V6.04657H5.67046C5.72796 6.39307 5.77746 6.74457 5.82396 7.09607L6.00346 8.34107L6.30046 6.04657H7.95396L7.95446 10.9556ZM11.2725 9.50257C11.2725 9.93757 11.244 10.2316 11.202 10.3826C11.17 10.5187 11.0941 10.6404 10.986 10.7291C10.8769 10.8202 10.7459 10.8812 10.606 10.9061C10.4575 10.9346 10.226 10.9556 9.92646 10.9556L9.92396 10.9531H8.38746V6.04657H9.33796C9.94746 6.04657 10.304 6.07807 10.5175 6.13007C10.7335 6.19007 10.9005 6.28107 11.015 6.41157C11.1245 6.53157 11.1975 6.67957 11.2235 6.84107C11.2575 6.99757 11.273 7.31007 11.273 7.77607L11.2725 9.50257ZM14.5695 9.81757C14.5695 10.1171 14.538 10.3281 14.5095 10.4791C14.468 10.6276 14.3795 10.7471 14.2385 10.8566C14.0875 10.9686 13.918 11.0181 13.7175 11.0181C13.5715 11.0181 13.384 10.9766 13.2645 10.9271C13.1313 10.8563 13.0142 10.7587 12.9205 10.6406L12.845 10.9556H11.699V6.04657L11.686 6.04407H12.8865V7.64307C12.9855 7.52607 13.0975 7.43757 13.225 7.37757C13.3722 7.32141 13.5284 7.29228 13.686 7.29157C13.837 7.29157 13.9855 7.31507 14.126 7.36957C14.2405 7.41657 14.3395 7.49207 14.4175 7.58857C14.4775 7.67207 14.5165 7.76807 14.5375 7.87007C14.5555 7.96107 14.566 8.15657 14.566 8.44807V9.81807L14.5695 9.81757ZM13.119 8.00807C13.041 8.00807 12.9915 8.03657 12.9705 8.08857C12.9495 8.14307 12.9315 8.28107 12.9315 8.50507V9.80207C12.9315 10.0181 12.9495 10.1591 12.9705 10.2186C12.9839 10.2467 13.0055 10.2702 13.0324 10.286C13.0593 10.3018 13.0903 10.3091 13.1215 10.3071C13.1995 10.3071 13.301 10.2756 13.322 10.2131C13.34 10.1481 13.3505 9.99957 13.3505 9.76507L13.3715 9.76257V8.50207C13.3715 8.30157 13.361 8.16357 13.3325 8.10107C13.301 8.03357 13.2025 8.00707 13.1215 8.00707L13.119 8.00807Z" fill="#FFD600"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_799_440">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.399963 0.539307)"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="movie-name">Oppenheimer 2023</p>
+                    </div>
+                    <div onclick="window.open('downloadPage.html', '_self')" class="movie__info-wrapper">
+                        <div class="movie__info">
+                            <img src="images/Home Page/dram2.jpg" alt="movie image" class="movie-img">
+                            <div class="movie-caption">
+                                <p class="movie__content-title">خلاصه داستان</p>
+                                <p class="movie__content">فیلم اوپنهایمر Oppenheimer پدر بمب اتم به کارگردانی کریستوفر نولان است . فیلم بر اساس وقایع واقعی با روایت داستان جی رابرت اوپنهایمر است. اساس زندگینامه کای برد و مارتین جی شروین است. این فیلم قرار است در تاریخ 21 جولای 2023 در سینماهای ایالات متحده اکران شود. این فیلم برای اولین بار برای یونیورسال پیکچرز پخش می شود.</p>
+                                <div class="movie__content-wrapper">
+                                    <div class="movie-ageGroup">
+                                        <p class="movie__ageGroup-title">رده سنیی</p>
+                                        <p class="movie__ageGroup-content">TV-MA</p>
+                                    </div>
+                                    <div class="movie-swiper-genre">
+                                        <p class="movie__genre-title">ژانر</p>
+                                        <p class="movie__genre-content">اکشن، درام، هیجان انگیز، ماجراجویی</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-content">
+                                <span class="movie__time">2h 26m</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M7.99997 16.5393C5.87824 16.5393 3.84341 15.6965 2.34312 14.1962C0.842824 12.6959 -3.05176e-05 10.661 -3.05176e-05 8.53931C-3.05176e-05 6.41757 0.842824 4.38274 2.34312 2.88245C3.84341 1.38216 5.87824 0.539307 7.99997 0.539307C10.1217 0.539307 12.1565 1.38216 13.6568 2.88245C15.1571 4.38274 16 6.41757 16 8.53931C16 10.661 15.1571 12.6959 13.6568 14.1962C12.1565 15.6965 10.1217 16.5393 7.99997 16.5393ZM7.99997 14.9393C9.69736 14.9393 11.3252 14.265 12.5255 13.0648C13.7257 11.8646 14.4 10.2367 14.4 8.53931C14.4 6.84192 13.7257 5.21406 12.5255 4.01382C11.3252 2.81359 9.69736 2.13931 7.99997 2.13931C6.30258 2.13931 4.67472 2.81359 3.47449 4.01382C2.27425 5.21406 1.59997 6.84192 1.59997 8.53931C1.59997 10.2367 2.27425 11.8646 3.47449 13.0648C4.67472 14.265 6.30258 14.9393 7.99997 14.9393ZM7.19997 8.86731V3.73931H8.79997V8.21131L11.96 11.3713L10.832 12.4993L7.19997 8.86731Z" fill="#FFD600"></path>
+                                </svg>
+                                <span class="movie__imdb">8</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                    <g clip-path="url(#clip0_799_440)">
+                                    <path d="M9.93896 6.93207V6.93457C9.88946 6.90307 9.78796 6.88757 9.66046 6.88757V10.0986C9.83996 10.0986 9.95196 10.0571 9.99396 9.98657C10.0355 9.91907 10.0565 9.71857 10.0565 9.39807V7.48657C10.0565 7.26757 10.054 7.12707 10.0355 7.06707C10.02 7.00207 9.99096 6.95757 9.94146 6.93157L9.93896 6.93207ZM15.3425 0.539074H1.48046C1.20175 0.55511 0.938394 0.67203 0.739566 0.868006C0.540737 1.06398 0.420025 1.32562 0.399963 1.60407L0.399963 15.4581C0.438963 16.0416 0.873963 16.4866 1.43646 16.5361C1.44696 16.5386 1.45746 16.5386 1.46796 16.5386H15.364C15.6471 16.5102 15.9097 16.3779 16.1011 16.1673C16.2925 15.9567 16.3992 15.6827 16.4005 15.3981V1.67907C16.399 1.39109 16.2896 1.11412 16.0938 0.90294C15.8979 0.69176 15.63 0.561735 15.343 0.538574L15.3425 0.539074ZM3.59546 10.9556H2.32446V6.04657H3.59546V10.9556ZM7.95446 10.9556H6.84746V7.64057L6.39946 10.9531H5.60796L5.14196 7.71357L5.13696 10.9531H4.02746V6.04657H5.67046C5.72796 6.39307 5.77746 6.74457 5.82396 7.09607L6.00346 8.34107L6.30046 6.04657H7.95396L7.95446 10.9556ZM11.2725 9.50257C11.2725 9.93757 11.244 10.2316 11.202 10.3826C11.17 10.5187 11.0941 10.6404 10.986 10.7291C10.8769 10.8202 10.7459 10.8812 10.606 10.9061C10.4575 10.9346 10.226 10.9556 9.92646 10.9556L9.92396 10.9531H8.38746V6.04657H9.33796C9.94746 6.04657 10.304 6.07807 10.5175 6.13007C10.7335 6.19007 10.9005 6.28107 11.015 6.41157C11.1245 6.53157 11.1975 6.67957 11.2235 6.84107C11.2575 6.99757 11.273 7.31007 11.273 7.77607L11.2725 9.50257ZM14.5695 9.81757C14.5695 10.1171 14.538 10.3281 14.5095 10.4791C14.468 10.6276 14.3795 10.7471 14.2385 10.8566C14.0875 10.9686 13.918 11.0181 13.7175 11.0181C13.5715 11.0181 13.384 10.9766 13.2645 10.9271C13.1313 10.8563 13.0142 10.7587 12.9205 10.6406L12.845 10.9556H11.699V6.04657L11.686 6.04407H12.8865V7.64307C12.9855 7.52607 13.0975 7.43757 13.225 7.37757C13.3722 7.32141 13.5284 7.29228 13.686 7.29157C13.837 7.29157 13.9855 7.31507 14.126 7.36957C14.2405 7.41657 14.3395 7.49207 14.4175 7.58857C14.4775 7.67207 14.5165 7.76807 14.5375 7.87007C14.5555 7.96107 14.566 8.15657 14.566 8.44807V9.81807L14.5695 9.81757ZM13.119 8.00807C13.041 8.00807 12.9915 8.03657 12.9705 8.08857C12.9495 8.14307 12.9315 8.28107 12.9315 8.50507V9.80207C12.9315 10.0181 12.9495 10.1591 12.9705 10.2186C12.9839 10.2467 13.0055 10.2702 13.0324 10.286C13.0593 10.3018 13.0903 10.3091 13.1215 10.3071C13.1995 10.3071 13.301 10.2756 13.322 10.2131C13.34 10.1481 13.3505 9.99957 13.3505 9.76507L13.3715 9.76257V8.50207C13.3715 8.30157 13.361 8.16357 13.3325 8.10107C13.301 8.03357 13.2025 8.00707 13.1215 8.00707L13.119 8.00807Z" fill="#FFD600"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_799_440">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.399963 0.539307)"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="movie-name">Oppenheimer 2023</p>
+                    </div>
+                    <div onclick="window.open('downloadPage.html', '_self')" class="movie__info-wrapper">
+                        <div class="movie__info">
+                            <img src="images/Home Page/dram3.jpg" alt="movie image" class="movie-img">
+                            <div class="movie-caption">
+                                <p class="movie__content-title">خلاصه داستان</p>
+                                <p class="movie__content">فیلم اوپنهایمر Oppenheimer پدر بمب اتم به کارگردانی کریستوفر نولان است . فیلم بر اساس وقایع واقعی با روایت داستان جی رابرت اوپنهایمر است. اساس زندگینامه کای برد و مارتین جی شروین است. این فیلم قرار است در تاریخ 21 جولای 2023 در سینماهای ایالات متحده اکران شود. این فیلم برای اولین بار برای یونیورسال پیکچرز پخش می شود.</p>
+                                <div class="movie__content-wrapper">
+                                    <div class="movie-ageGroup">
+                                        <p class="movie__ageGroup-title">رده سنیی</p>
+                                        <p class="movie__ageGroup-content">TV-MA</p>
+                                    </div>
+                                    <div class="movie-swiper-genre">
+                                        <p class="movie__genre-title">ژانر</p>
+                                        <p class="movie__genre-content">اکشن، درام، هیجان انگیز، ماجراجویی</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-content">
+                                <span class="movie__time">2h 26m</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M7.99997 16.5393C5.87824 16.5393 3.84341 15.6965 2.34312 14.1962C0.842824 12.6959 -3.05176e-05 10.661 -3.05176e-05 8.53931C-3.05176e-05 6.41757 0.842824 4.38274 2.34312 2.88245C3.84341 1.38216 5.87824 0.539307 7.99997 0.539307C10.1217 0.539307 12.1565 1.38216 13.6568 2.88245C15.1571 4.38274 16 6.41757 16 8.53931C16 10.661 15.1571 12.6959 13.6568 14.1962C12.1565 15.6965 10.1217 16.5393 7.99997 16.5393ZM7.99997 14.9393C9.69736 14.9393 11.3252 14.265 12.5255 13.0648C13.7257 11.8646 14.4 10.2367 14.4 8.53931C14.4 6.84192 13.7257 5.21406 12.5255 4.01382C11.3252 2.81359 9.69736 2.13931 7.99997 2.13931C6.30258 2.13931 4.67472 2.81359 3.47449 4.01382C2.27425 5.21406 1.59997 6.84192 1.59997 8.53931C1.59997 10.2367 2.27425 11.8646 3.47449 13.0648C4.67472 14.265 6.30258 14.9393 7.99997 14.9393ZM7.19997 8.86731V3.73931H8.79997V8.21131L11.96 11.3713L10.832 12.4993L7.19997 8.86731Z" fill="#FFD600"></path>
+                                </svg>
+                                <span class="movie__imdb">8</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                    <g clip-path="url(#clip0_799_440)">
+                                    <path d="M9.93896 6.93207V6.93457C9.88946 6.90307 9.78796 6.88757 9.66046 6.88757V10.0986C9.83996 10.0986 9.95196 10.0571 9.99396 9.98657C10.0355 9.91907 10.0565 9.71857 10.0565 9.39807V7.48657C10.0565 7.26757 10.054 7.12707 10.0355 7.06707C10.02 7.00207 9.99096 6.95757 9.94146 6.93157L9.93896 6.93207ZM15.3425 0.539074H1.48046C1.20175 0.55511 0.938394 0.67203 0.739566 0.868006C0.540737 1.06398 0.420025 1.32562 0.399963 1.60407L0.399963 15.4581C0.438963 16.0416 0.873963 16.4866 1.43646 16.5361C1.44696 16.5386 1.45746 16.5386 1.46796 16.5386H15.364C15.6471 16.5102 15.9097 16.3779 16.1011 16.1673C16.2925 15.9567 16.3992 15.6827 16.4005 15.3981V1.67907C16.399 1.39109 16.2896 1.11412 16.0938 0.90294C15.8979 0.69176 15.63 0.561735 15.343 0.538574L15.3425 0.539074ZM3.59546 10.9556H2.32446V6.04657H3.59546V10.9556ZM7.95446 10.9556H6.84746V7.64057L6.39946 10.9531H5.60796L5.14196 7.71357L5.13696 10.9531H4.02746V6.04657H5.67046C5.72796 6.39307 5.77746 6.74457 5.82396 7.09607L6.00346 8.34107L6.30046 6.04657H7.95396L7.95446 10.9556ZM11.2725 9.50257C11.2725 9.93757 11.244 10.2316 11.202 10.3826C11.17 10.5187 11.0941 10.6404 10.986 10.7291C10.8769 10.8202 10.7459 10.8812 10.606 10.9061C10.4575 10.9346 10.226 10.9556 9.92646 10.9556L9.92396 10.9531H8.38746V6.04657H9.33796C9.94746 6.04657 10.304 6.07807 10.5175 6.13007C10.7335 6.19007 10.9005 6.28107 11.015 6.41157C11.1245 6.53157 11.1975 6.67957 11.2235 6.84107C11.2575 6.99757 11.273 7.31007 11.273 7.77607L11.2725 9.50257ZM14.5695 9.81757C14.5695 10.1171 14.538 10.3281 14.5095 10.4791C14.468 10.6276 14.3795 10.7471 14.2385 10.8566C14.0875 10.9686 13.918 11.0181 13.7175 11.0181C13.5715 11.0181 13.384 10.9766 13.2645 10.9271C13.1313 10.8563 13.0142 10.7587 12.9205 10.6406L12.845 10.9556H11.699V6.04657L11.686 6.04407H12.8865V7.64307C12.9855 7.52607 13.0975 7.43757 13.225 7.37757C13.3722 7.32141 13.5284 7.29228 13.686 7.29157C13.837 7.29157 13.9855 7.31507 14.126 7.36957C14.2405 7.41657 14.3395 7.49207 14.4175 7.58857C14.4775 7.67207 14.5165 7.76807 14.5375 7.87007C14.5555 7.96107 14.566 8.15657 14.566 8.44807V9.81807L14.5695 9.81757ZM13.119 8.00807C13.041 8.00807 12.9915 8.03657 12.9705 8.08857C12.9495 8.14307 12.9315 8.28107 12.9315 8.50507V9.80207C12.9315 10.0181 12.9495 10.1591 12.9705 10.2186C12.9839 10.2467 13.0055 10.2702 13.0324 10.286C13.0593 10.3018 13.0903 10.3091 13.1215 10.3071C13.1995 10.3071 13.301 10.2756 13.322 10.2131C13.34 10.1481 13.3505 9.99957 13.3505 9.76507L13.3715 9.76257V8.50207C13.3715 8.30157 13.361 8.16357 13.3325 8.10107C13.301 8.03357 13.2025 8.00707 13.1215 8.00707L13.119 8.00807Z" fill="#FFD600"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_799_440">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.399963 0.539307)"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="movie-name">Oppenheimer 2023</p>
+                    </div>
+                    <div onclick="window.open('downloadPage.html', '_self')" class="movie__info-wrapper">
+                        <div class="movie__info">
+                            <img src="images/Home Page/dram4.jpg" alt="movie image" class="movie-img">
+                            <div class="movie-caption">
+                                <p class="movie__content-title">خلاصه داستان</p>
+                                <p class="movie__content">فیلم اوپنهایمر Oppenheimer پدر بمب اتم به کارگردانی کریستوفر نولان است . فیلم بر اساس وقایع واقعی با روایت داستان جی رابرت اوپنهایمر است. اساس زندگینامه کای برد و مارتین جی شروین است. این فیلم قرار است در تاریخ 21 جولای 2023 در سینماهای ایالات متحده اکران شود. این فیلم برای اولین بار برای یونیورسال پیکچرز پخش می شود.</p>
+                                <div class="movie__content-wrapper">
+                                    <div class="movie-ageGroup">
+                                        <p class="movie__ageGroup-title">رده سنیی</p>
+                                        <p class="movie__ageGroup-content">TV-MA</p>
+                                    </div>
+                                    <div class="movie-swiper-genre">
+                                        <p class="movie__genre-title">ژانر</p>
+                                        <p class="movie__genre-content">اکشن، درام، هیجان انگیز، ماجراجویی</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-content">
+                                <span class="movie__time">2h 26m</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M7.99997 16.5393C5.87824 16.5393 3.84341 15.6965 2.34312 14.1962C0.842824 12.6959 -3.05176e-05 10.661 -3.05176e-05 8.53931C-3.05176e-05 6.41757 0.842824 4.38274 2.34312 2.88245C3.84341 1.38216 5.87824 0.539307 7.99997 0.539307C10.1217 0.539307 12.1565 1.38216 13.6568 2.88245C15.1571 4.38274 16 6.41757 16 8.53931C16 10.661 15.1571 12.6959 13.6568 14.1962C12.1565 15.6965 10.1217 16.5393 7.99997 16.5393ZM7.99997 14.9393C9.69736 14.9393 11.3252 14.265 12.5255 13.0648C13.7257 11.8646 14.4 10.2367 14.4 8.53931C14.4 6.84192 13.7257 5.21406 12.5255 4.01382C11.3252 2.81359 9.69736 2.13931 7.99997 2.13931C6.30258 2.13931 4.67472 2.81359 3.47449 4.01382C2.27425 5.21406 1.59997 6.84192 1.59997 8.53931C1.59997 10.2367 2.27425 11.8646 3.47449 13.0648C4.67472 14.265 6.30258 14.9393 7.99997 14.9393ZM7.19997 8.86731V3.73931H8.79997V8.21131L11.96 11.3713L10.832 12.4993L7.19997 8.86731Z" fill="#FFD600"></path>
+                                </svg>
+                                <span class="movie__imdb">8</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                    <g clip-path="url(#clip0_799_440)">
+                                    <path d="M9.93896 6.93207V6.93457C9.88946 6.90307 9.78796 6.88757 9.66046 6.88757V10.0986C9.83996 10.0986 9.95196 10.0571 9.99396 9.98657C10.0355 9.91907 10.0565 9.71857 10.0565 9.39807V7.48657C10.0565 7.26757 10.054 7.12707 10.0355 7.06707C10.02 7.00207 9.99096 6.95757 9.94146 6.93157L9.93896 6.93207ZM15.3425 0.539074H1.48046C1.20175 0.55511 0.938394 0.67203 0.739566 0.868006C0.540737 1.06398 0.420025 1.32562 0.399963 1.60407L0.399963 15.4581C0.438963 16.0416 0.873963 16.4866 1.43646 16.5361C1.44696 16.5386 1.45746 16.5386 1.46796 16.5386H15.364C15.6471 16.5102 15.9097 16.3779 16.1011 16.1673C16.2925 15.9567 16.3992 15.6827 16.4005 15.3981V1.67907C16.399 1.39109 16.2896 1.11412 16.0938 0.90294C15.8979 0.69176 15.63 0.561735 15.343 0.538574L15.3425 0.539074ZM3.59546 10.9556H2.32446V6.04657H3.59546V10.9556ZM7.95446 10.9556H6.84746V7.64057L6.39946 10.9531H5.60796L5.14196 7.71357L5.13696 10.9531H4.02746V6.04657H5.67046C5.72796 6.39307 5.77746 6.74457 5.82396 7.09607L6.00346 8.34107L6.30046 6.04657H7.95396L7.95446 10.9556ZM11.2725 9.50257C11.2725 9.93757 11.244 10.2316 11.202 10.3826C11.17 10.5187 11.0941 10.6404 10.986 10.7291C10.8769 10.8202 10.7459 10.8812 10.606 10.9061C10.4575 10.9346 10.226 10.9556 9.92646 10.9556L9.92396 10.9531H8.38746V6.04657H9.33796C9.94746 6.04657 10.304 6.07807 10.5175 6.13007C10.7335 6.19007 10.9005 6.28107 11.015 6.41157C11.1245 6.53157 11.1975 6.67957 11.2235 6.84107C11.2575 6.99757 11.273 7.31007 11.273 7.77607L11.2725 9.50257ZM14.5695 9.81757C14.5695 10.1171 14.538 10.3281 14.5095 10.4791C14.468 10.6276 14.3795 10.7471 14.2385 10.8566C14.0875 10.9686 13.918 11.0181 13.7175 11.0181C13.5715 11.0181 13.384 10.9766 13.2645 10.9271C13.1313 10.8563 13.0142 10.7587 12.9205 10.6406L12.845 10.9556H11.699V6.04657L11.686 6.04407H12.8865V7.64307C12.9855 7.52607 13.0975 7.43757 13.225 7.37757C13.3722 7.32141 13.5284 7.29228 13.686 7.29157C13.837 7.29157 13.9855 7.31507 14.126 7.36957C14.2405 7.41657 14.3395 7.49207 14.4175 7.58857C14.4775 7.67207 14.5165 7.76807 14.5375 7.87007C14.5555 7.96107 14.566 8.15657 14.566 8.44807V9.81807L14.5695 9.81757ZM13.119 8.00807C13.041 8.00807 12.9915 8.03657 12.9705 8.08857C12.9495 8.14307 12.9315 8.28107 12.9315 8.50507V9.80207C12.9315 10.0181 12.9495 10.1591 12.9705 10.2186C12.9839 10.2467 13.0055 10.2702 13.0324 10.286C13.0593 10.3018 13.0903 10.3091 13.1215 10.3071C13.1995 10.3071 13.301 10.2756 13.322 10.2131C13.34 10.1481 13.3505 9.99957 13.3505 9.76507L13.3715 9.76257V8.50207C13.3715 8.30157 13.361 8.16357 13.3325 8.10107C13.301 8.03357 13.2025 8.00707 13.1215 8.00707L13.119 8.00807Z" fill="#FFD600"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_799_440">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.399963 0.539307)"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="movie-name">Oppenheimer 2023</p>
+                    </div>
+                    <div onclick="window.open('downloadPage.html', '_self')" class="movie__info-wrapper">
+                        <div class="movie__info">
+                            <img src="images/Home Page/dram5.jpg" alt="movie image" class="movie-img">
+                            <div class="movie-caption">
+                                <p class="movie__content-title">خلاصه داستان</p>
+                                <p class="movie__content">فیلم اوپنهایمر Oppenheimer پدر بمب اتم به کارگردانی کریستوفر نولان است . فیلم بر اساس وقایع واقعی با روایت داستان جی رابرت اوپنهایمر است. اساس زندگینامه کای برد و مارتین جی شروین است. این فیلم قرار است در تاریخ 21 جولای 2023 در سینماهای ایالات متحده اکران شود. این فیلم برای اولین بار برای یونیورسال پیکچرز پخش می شود.</p>
+                                <div class="movie__content-wrapper">
+                                    <div class="movie-ageGroup">
+                                        <p class="movie__ageGroup-title">رده سنیی</p>
+                                        <p class="movie__ageGroup-content">TV-MA</p>
+                                    </div>
+                                    <div class="movie-swiper-genre">
+                                        <p class="movie__genre-title">ژانر</p>
+                                        <p class="movie__genre-content">اکشن، درام، هیجان انگیز، ماجراجویی</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-content">
+                                <span class="movie__time">2h 26m</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M7.99997 16.5393C5.87824 16.5393 3.84341 15.6965 2.34312 14.1962C0.842824 12.6959 -3.05176e-05 10.661 -3.05176e-05 8.53931C-3.05176e-05 6.41757 0.842824 4.38274 2.34312 2.88245C3.84341 1.38216 5.87824 0.539307 7.99997 0.539307C10.1217 0.539307 12.1565 1.38216 13.6568 2.88245C15.1571 4.38274 16 6.41757 16 8.53931C16 10.661 15.1571 12.6959 13.6568 14.1962C12.1565 15.6965 10.1217 16.5393 7.99997 16.5393ZM7.99997 14.9393C9.69736 14.9393 11.3252 14.265 12.5255 13.0648C13.7257 11.8646 14.4 10.2367 14.4 8.53931C14.4 6.84192 13.7257 5.21406 12.5255 4.01382C11.3252 2.81359 9.69736 2.13931 7.99997 2.13931C6.30258 2.13931 4.67472 2.81359 3.47449 4.01382C2.27425 5.21406 1.59997 6.84192 1.59997 8.53931C1.59997 10.2367 2.27425 11.8646 3.47449 13.0648C4.67472 14.265 6.30258 14.9393 7.99997 14.9393ZM7.19997 8.86731V3.73931H8.79997V8.21131L11.96 11.3713L10.832 12.4993L7.19997 8.86731Z" fill="#FFD600"></path>
+                                </svg>
+                                <span class="movie__imdb">8</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                    <g clip-path="url(#clip0_799_440)">
+                                    <path d="M9.93896 6.93207V6.93457C9.88946 6.90307 9.78796 6.88757 9.66046 6.88757V10.0986C9.83996 10.0986 9.95196 10.0571 9.99396 9.98657C10.0355 9.91907 10.0565 9.71857 10.0565 9.39807V7.48657C10.0565 7.26757 10.054 7.12707 10.0355 7.06707C10.02 7.00207 9.99096 6.95757 9.94146 6.93157L9.93896 6.93207ZM15.3425 0.539074H1.48046C1.20175 0.55511 0.938394 0.67203 0.739566 0.868006C0.540737 1.06398 0.420025 1.32562 0.399963 1.60407L0.399963 15.4581C0.438963 16.0416 0.873963 16.4866 1.43646 16.5361C1.44696 16.5386 1.45746 16.5386 1.46796 16.5386H15.364C15.6471 16.5102 15.9097 16.3779 16.1011 16.1673C16.2925 15.9567 16.3992 15.6827 16.4005 15.3981V1.67907C16.399 1.39109 16.2896 1.11412 16.0938 0.90294C15.8979 0.69176 15.63 0.561735 15.343 0.538574L15.3425 0.539074ZM3.59546 10.9556H2.32446V6.04657H3.59546V10.9556ZM7.95446 10.9556H6.84746V7.64057L6.39946 10.9531H5.60796L5.14196 7.71357L5.13696 10.9531H4.02746V6.04657H5.67046C5.72796 6.39307 5.77746 6.74457 5.82396 7.09607L6.00346 8.34107L6.30046 6.04657H7.95396L7.95446 10.9556ZM11.2725 9.50257C11.2725 9.93757 11.244 10.2316 11.202 10.3826C11.17 10.5187 11.0941 10.6404 10.986 10.7291C10.8769 10.8202 10.7459 10.8812 10.606 10.9061C10.4575 10.9346 10.226 10.9556 9.92646 10.9556L9.92396 10.9531H8.38746V6.04657H9.33796C9.94746 6.04657 10.304 6.07807 10.5175 6.13007C10.7335 6.19007 10.9005 6.28107 11.015 6.41157C11.1245 6.53157 11.1975 6.67957 11.2235 6.84107C11.2575 6.99757 11.273 7.31007 11.273 7.77607L11.2725 9.50257ZM14.5695 9.81757C14.5695 10.1171 14.538 10.3281 14.5095 10.4791C14.468 10.6276 14.3795 10.7471 14.2385 10.8566C14.0875 10.9686 13.918 11.0181 13.7175 11.0181C13.5715 11.0181 13.384 10.9766 13.2645 10.9271C13.1313 10.8563 13.0142 10.7587 12.9205 10.6406L12.845 10.9556H11.699V6.04657L11.686 6.04407H12.8865V7.64307C12.9855 7.52607 13.0975 7.43757 13.225 7.37757C13.3722 7.32141 13.5284 7.29228 13.686 7.29157C13.837 7.29157 13.9855 7.31507 14.126 7.36957C14.2405 7.41657 14.3395 7.49207 14.4175 7.58857C14.4775 7.67207 14.5165 7.76807 14.5375 7.87007C14.5555 7.96107 14.566 8.15657 14.566 8.44807V9.81807L14.5695 9.81757ZM13.119 8.00807C13.041 8.00807 12.9915 8.03657 12.9705 8.08857C12.9495 8.14307 12.9315 8.28107 12.9315 8.50507V9.80207C12.9315 10.0181 12.9495 10.1591 12.9705 10.2186C12.9839 10.2467 13.0055 10.2702 13.0324 10.286C13.0593 10.3018 13.0903 10.3091 13.1215 10.3071C13.1995 10.3071 13.301 10.2756 13.322 10.2131C13.34 10.1481 13.3505 9.99957 13.3505 9.76507L13.3715 9.76257V8.50207C13.3715 8.30157 13.361 8.16357 13.3325 8.10107C13.301 8.03357 13.2025 8.00707 13.1215 8.00707L13.119 8.00807Z" fill="#FFD600"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_799_440">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.399963 0.539307)"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="movie-name">Oppenheimer 2023</p>
+                    </div>
+                    <div onclick="window.open('downloadPage.html', '_self')" class="movie__info-wrapper">
+                        <div class="movie__info">
+                            <img src="images/Home Page/scary1.jpg" alt="movie image" class="movie-img">
+                            <div class="movie-caption">
+                                <p class="movie__content-title">خلاصه داستان</p>
+                                <p class="movie__content">فیلم اوپنهایمر Oppenheimer پدر بمب اتم به کارگردانی کریستوفر نولان است . فیلم بر اساس وقایع واقعی با روایت داستان جی رابرت اوپنهایمر است. اساس زندگینامه کای برد و مارتین جی شروین است. این فیلم قرار است در تاریخ 21 جولای 2023 در سینماهای ایالات متحده اکران شود. این فیلم برای اولین بار برای یونیورسال پیکچرز پخش می شود.</p>
+                                <div class="movie__content-wrapper">
+                                    <div class="movie-ageGroup">
+                                        <p class="movie__ageGroup-title">رده سنیی</p>
+                                        <p class="movie__ageGroup-content">TV-MA</p>
+                                    </div>
+                                    <div class="movie-swiper-genre">
+                                        <p class="movie__genre-title">ژانر</p>
+                                        <p class="movie__genre-content">اکشن، درام، هیجان انگیز، ماجراجویی</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-content">
+                                <span class="movie__time">2h 26m</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M7.99997 16.5393C5.87824 16.5393 3.84341 15.6965 2.34312 14.1962C0.842824 12.6959 -3.05176e-05 10.661 -3.05176e-05 8.53931C-3.05176e-05 6.41757 0.842824 4.38274 2.34312 2.88245C3.84341 1.38216 5.87824 0.539307 7.99997 0.539307C10.1217 0.539307 12.1565 1.38216 13.6568 2.88245C15.1571 4.38274 16 6.41757 16 8.53931C16 10.661 15.1571 12.6959 13.6568 14.1962C12.1565 15.6965 10.1217 16.5393 7.99997 16.5393ZM7.99997 14.9393C9.69736 14.9393 11.3252 14.265 12.5255 13.0648C13.7257 11.8646 14.4 10.2367 14.4 8.53931C14.4 6.84192 13.7257 5.21406 12.5255 4.01382C11.3252 2.81359 9.69736 2.13931 7.99997 2.13931C6.30258 2.13931 4.67472 2.81359 3.47449 4.01382C2.27425 5.21406 1.59997 6.84192 1.59997 8.53931C1.59997 10.2367 2.27425 11.8646 3.47449 13.0648C4.67472 14.265 6.30258 14.9393 7.99997 14.9393ZM7.19997 8.86731V3.73931H8.79997V8.21131L11.96 11.3713L10.832 12.4993L7.19997 8.86731Z" fill="#FFD600"></path>
+                                </svg>
+                                <span class="movie__imdb">8</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                    <g clip-path="url(#clip0_799_440)">
+                                    <path d="M9.93896 6.93207V6.93457C9.88946 6.90307 9.78796 6.88757 9.66046 6.88757V10.0986C9.83996 10.0986 9.95196 10.0571 9.99396 9.98657C10.0355 9.91907 10.0565 9.71857 10.0565 9.39807V7.48657C10.0565 7.26757 10.054 7.12707 10.0355 7.06707C10.02 7.00207 9.99096 6.95757 9.94146 6.93157L9.93896 6.93207ZM15.3425 0.539074H1.48046C1.20175 0.55511 0.938394 0.67203 0.739566 0.868006C0.540737 1.06398 0.420025 1.32562 0.399963 1.60407L0.399963 15.4581C0.438963 16.0416 0.873963 16.4866 1.43646 16.5361C1.44696 16.5386 1.45746 16.5386 1.46796 16.5386H15.364C15.6471 16.5102 15.9097 16.3779 16.1011 16.1673C16.2925 15.9567 16.3992 15.6827 16.4005 15.3981V1.67907C16.399 1.39109 16.2896 1.11412 16.0938 0.90294C15.8979 0.69176 15.63 0.561735 15.343 0.538574L15.3425 0.539074ZM3.59546 10.9556H2.32446V6.04657H3.59546V10.9556ZM7.95446 10.9556H6.84746V7.64057L6.39946 10.9531H5.60796L5.14196 7.71357L5.13696 10.9531H4.02746V6.04657H5.67046C5.72796 6.39307 5.77746 6.74457 5.82396 7.09607L6.00346 8.34107L6.30046 6.04657H7.95396L7.95446 10.9556ZM11.2725 9.50257C11.2725 9.93757 11.244 10.2316 11.202 10.3826C11.17 10.5187 11.0941 10.6404 10.986 10.7291C10.8769 10.8202 10.7459 10.8812 10.606 10.9061C10.4575 10.9346 10.226 10.9556 9.92646 10.9556L9.92396 10.9531H8.38746V6.04657H9.33796C9.94746 6.04657 10.304 6.07807 10.5175 6.13007C10.7335 6.19007 10.9005 6.28107 11.015 6.41157C11.1245 6.53157 11.1975 6.67957 11.2235 6.84107C11.2575 6.99757 11.273 7.31007 11.273 7.77607L11.2725 9.50257ZM14.5695 9.81757C14.5695 10.1171 14.538 10.3281 14.5095 10.4791C14.468 10.6276 14.3795 10.7471 14.2385 10.8566C14.0875 10.9686 13.918 11.0181 13.7175 11.0181C13.5715 11.0181 13.384 10.9766 13.2645 10.9271C13.1313 10.8563 13.0142 10.7587 12.9205 10.6406L12.845 10.9556H11.699V6.04657L11.686 6.04407H12.8865V7.64307C12.9855 7.52607 13.0975 7.43757 13.225 7.37757C13.3722 7.32141 13.5284 7.29228 13.686 7.29157C13.837 7.29157 13.9855 7.31507 14.126 7.36957C14.2405 7.41657 14.3395 7.49207 14.4175 7.58857C14.4775 7.67207 14.5165 7.76807 14.5375 7.87007C14.5555 7.96107 14.566 8.15657 14.566 8.44807V9.81807L14.5695 9.81757ZM13.119 8.00807C13.041 8.00807 12.9915 8.03657 12.9705 8.08857C12.9495 8.14307 12.9315 8.28107 12.9315 8.50507V9.80207C12.9315 10.0181 12.9495 10.1591 12.9705 10.2186C12.9839 10.2467 13.0055 10.2702 13.0324 10.286C13.0593 10.3018 13.0903 10.3091 13.1215 10.3071C13.1995 10.3071 13.301 10.2756 13.322 10.2131C13.34 10.1481 13.3505 9.99957 13.3505 9.76507L13.3715 9.76257V8.50207C13.3715 8.30157 13.361 8.16357 13.3325 8.10107C13.301 8.03357 13.2025 8.00707 13.1215 8.00707L13.119 8.00807Z" fill="#FFD600"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_799_440">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.399963 0.539307)"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="movie-name">Oppenheimer 2023</p>
+                    </div>
+                    <div onclick="window.open('downloadPage.html', '_self')" class="movie__info-wrapper">
+                        <div class="movie__info">
+                            <img src="images/Home Page/scary2.jpg" alt="movie image" class="movie-img">
+                            <div class="movie-caption">
+                                <p class="movie__content-title">خلاصه داستان</p>
+                                <p class="movie__content">فیلم اوپنهایمر Oppenheimer پدر بمب اتم به کارگردانی کریستوفر نولان است . فیلم بر اساس وقایع واقعی با روایت داستان جی رابرت اوپنهایمر است. اساس زندگینامه کای برد و مارتین جی شروین است. این فیلم قرار است در تاریخ 21 جولای 2023 در سینماهای ایالات متحده اکران شود. این فیلم برای اولین بار برای یونیورسال پیکچرز پخش می شود.</p>
+                                <div class="movie__content-wrapper">
+                                    <div class="movie-ageGroup">
+                                        <p class="movie__ageGroup-title">رده سنیی</p>
+                                        <p class="movie__ageGroup-content">TV-MA</p>
+                                    </div>
+                                    <div class="movie-swiper-genre">
+                                        <p class="movie__genre-title">ژانر</p>
+                                        <p class="movie__genre-content">اکشن، درام، هیجان انگیز، ماجراجویی</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-content">
+                                <span class="movie__time">2h 26m</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M7.99997 16.5393C5.87824 16.5393 3.84341 15.6965 2.34312 14.1962C0.842824 12.6959 -3.05176e-05 10.661 -3.05176e-05 8.53931C-3.05176e-05 6.41757 0.842824 4.38274 2.34312 2.88245C3.84341 1.38216 5.87824 0.539307 7.99997 0.539307C10.1217 0.539307 12.1565 1.38216 13.6568 2.88245C15.1571 4.38274 16 6.41757 16 8.53931C16 10.661 15.1571 12.6959 13.6568 14.1962C12.1565 15.6965 10.1217 16.5393 7.99997 16.5393ZM7.99997 14.9393C9.69736 14.9393 11.3252 14.265 12.5255 13.0648C13.7257 11.8646 14.4 10.2367 14.4 8.53931C14.4 6.84192 13.7257 5.21406 12.5255 4.01382C11.3252 2.81359 9.69736 2.13931 7.99997 2.13931C6.30258 2.13931 4.67472 2.81359 3.47449 4.01382C2.27425 5.21406 1.59997 6.84192 1.59997 8.53931C1.59997 10.2367 2.27425 11.8646 3.47449 13.0648C4.67472 14.265 6.30258 14.9393 7.99997 14.9393ZM7.19997 8.86731V3.73931H8.79997V8.21131L11.96 11.3713L10.832 12.4993L7.19997 8.86731Z" fill="#FFD600"></path>
+                                </svg>
+                                <span class="movie__imdb">8</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                    <g clip-path="url(#clip0_799_440)">
+                                    <path d="M9.93896 6.93207V6.93457C9.88946 6.90307 9.78796 6.88757 9.66046 6.88757V10.0986C9.83996 10.0986 9.95196 10.0571 9.99396 9.98657C10.0355 9.91907 10.0565 9.71857 10.0565 9.39807V7.48657C10.0565 7.26757 10.054 7.12707 10.0355 7.06707C10.02 7.00207 9.99096 6.95757 9.94146 6.93157L9.93896 6.93207ZM15.3425 0.539074H1.48046C1.20175 0.55511 0.938394 0.67203 0.739566 0.868006C0.540737 1.06398 0.420025 1.32562 0.399963 1.60407L0.399963 15.4581C0.438963 16.0416 0.873963 16.4866 1.43646 16.5361C1.44696 16.5386 1.45746 16.5386 1.46796 16.5386H15.364C15.6471 16.5102 15.9097 16.3779 16.1011 16.1673C16.2925 15.9567 16.3992 15.6827 16.4005 15.3981V1.67907C16.399 1.39109 16.2896 1.11412 16.0938 0.90294C15.8979 0.69176 15.63 0.561735 15.343 0.538574L15.3425 0.539074ZM3.59546 10.9556H2.32446V6.04657H3.59546V10.9556ZM7.95446 10.9556H6.84746V7.64057L6.39946 10.9531H5.60796L5.14196 7.71357L5.13696 10.9531H4.02746V6.04657H5.67046C5.72796 6.39307 5.77746 6.74457 5.82396 7.09607L6.00346 8.34107L6.30046 6.04657H7.95396L7.95446 10.9556ZM11.2725 9.50257C11.2725 9.93757 11.244 10.2316 11.202 10.3826C11.17 10.5187 11.0941 10.6404 10.986 10.7291C10.8769 10.8202 10.7459 10.8812 10.606 10.9061C10.4575 10.9346 10.226 10.9556 9.92646 10.9556L9.92396 10.9531H8.38746V6.04657H9.33796C9.94746 6.04657 10.304 6.07807 10.5175 6.13007C10.7335 6.19007 10.9005 6.28107 11.015 6.41157C11.1245 6.53157 11.1975 6.67957 11.2235 6.84107C11.2575 6.99757 11.273 7.31007 11.273 7.77607L11.2725 9.50257ZM14.5695 9.81757C14.5695 10.1171 14.538 10.3281 14.5095 10.4791C14.468 10.6276 14.3795 10.7471 14.2385 10.8566C14.0875 10.9686 13.918 11.0181 13.7175 11.0181C13.5715 11.0181 13.384 10.9766 13.2645 10.9271C13.1313 10.8563 13.0142 10.7587 12.9205 10.6406L12.845 10.9556H11.699V6.04657L11.686 6.04407H12.8865V7.64307C12.9855 7.52607 13.0975 7.43757 13.225 7.37757C13.3722 7.32141 13.5284 7.29228 13.686 7.29157C13.837 7.29157 13.9855 7.31507 14.126 7.36957C14.2405 7.41657 14.3395 7.49207 14.4175 7.58857C14.4775 7.67207 14.5165 7.76807 14.5375 7.87007C14.5555 7.96107 14.566 8.15657 14.566 8.44807V9.81807L14.5695 9.81757ZM13.119 8.00807C13.041 8.00807 12.9915 8.03657 12.9705 8.08857C12.9495 8.14307 12.9315 8.28107 12.9315 8.50507V9.80207C12.9315 10.0181 12.9495 10.1591 12.9705 10.2186C12.9839 10.2467 13.0055 10.2702 13.0324 10.286C13.0593 10.3018 13.0903 10.3091 13.1215 10.3071C13.1995 10.3071 13.301 10.2756 13.322 10.2131C13.34 10.1481 13.3505 9.99957 13.3505 9.76507L13.3715 9.76257V8.50207C13.3715 8.30157 13.361 8.16357 13.3325 8.10107C13.301 8.03357 13.2025 8.00707 13.1215 8.00707L13.119 8.00807Z" fill="#FFD600"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_799_440">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.399963 0.539307)"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="movie-name">Oppenheimer 2023</p>
+                    </div>
+                    <div onclick="window.open('downloadPage.html', '_self')" class="movie__info-wrapper">
+                        <div class="movie__info">
+                            <img src="images/Home Page/scary3.jpg" alt="movie image" class="movie-img">
+                            <div class="movie-caption">
+                                <p class="movie__content-title">خلاصه داستان</p>
+                                <p class="movie__content">فیلم اوپنهایمر Oppenheimer پدر بمب اتم به کارگردانی کریستوفر نولان است . فیلم بر اساس وقایع واقعی با روایت داستان جی رابرت اوپنهایمر است. اساس زندگینامه کای برد و مارتین جی شروین است. این فیلم قرار است در تاریخ 21 جولای 2023 در سینماهای ایالات متحده اکران شود. این فیلم برای اولین بار برای یونیورسال پیکچرز پخش می شود.</p>
+                                <div class="movie__content-wrapper">
+                                    <div class="movie-ageGroup">
+                                        <p class="movie__ageGroup-title">رده سنیی</p>
+                                        <p class="movie__ageGroup-content">TV-MA</p>
+                                    </div>
+                                    <div class="movie-swiper-genre">
+                                        <p class="movie__genre-title">ژانر</p>
+                                        <p class="movie__genre-content">اکشن، درام، هیجان انگیز، ماجراجویی</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-content">
+                                <span class="movie__time">2h 26m</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M7.99997 16.5393C5.87824 16.5393 3.84341 15.6965 2.34312 14.1962C0.842824 12.6959 -3.05176e-05 10.661 -3.05176e-05 8.53931C-3.05176e-05 6.41757 0.842824 4.38274 2.34312 2.88245C3.84341 1.38216 5.87824 0.539307 7.99997 0.539307C10.1217 0.539307 12.1565 1.38216 13.6568 2.88245C15.1571 4.38274 16 6.41757 16 8.53931C16 10.661 15.1571 12.6959 13.6568 14.1962C12.1565 15.6965 10.1217 16.5393 7.99997 16.5393ZM7.99997 14.9393C9.69736 14.9393 11.3252 14.265 12.5255 13.0648C13.7257 11.8646 14.4 10.2367 14.4 8.53931C14.4 6.84192 13.7257 5.21406 12.5255 4.01382C11.3252 2.81359 9.69736 2.13931 7.99997 2.13931C6.30258 2.13931 4.67472 2.81359 3.47449 4.01382C2.27425 5.21406 1.59997 6.84192 1.59997 8.53931C1.59997 10.2367 2.27425 11.8646 3.47449 13.0648C4.67472 14.265 6.30258 14.9393 7.99997 14.9393ZM7.19997 8.86731V3.73931H8.79997V8.21131L11.96 11.3713L10.832 12.4993L7.19997 8.86731Z" fill="#FFD600"></path>
+                                </svg>
+                                <span class="movie__imdb">8</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                    <g clip-path="url(#clip0_799_440)">
+                                    <path d="M9.93896 6.93207V6.93457C9.88946 6.90307 9.78796 6.88757 9.66046 6.88757V10.0986C9.83996 10.0986 9.95196 10.0571 9.99396 9.98657C10.0355 9.91907 10.0565 9.71857 10.0565 9.39807V7.48657C10.0565 7.26757 10.054 7.12707 10.0355 7.06707C10.02 7.00207 9.99096 6.95757 9.94146 6.93157L9.93896 6.93207ZM15.3425 0.539074H1.48046C1.20175 0.55511 0.938394 0.67203 0.739566 0.868006C0.540737 1.06398 0.420025 1.32562 0.399963 1.60407L0.399963 15.4581C0.438963 16.0416 0.873963 16.4866 1.43646 16.5361C1.44696 16.5386 1.45746 16.5386 1.46796 16.5386H15.364C15.6471 16.5102 15.9097 16.3779 16.1011 16.1673C16.2925 15.9567 16.3992 15.6827 16.4005 15.3981V1.67907C16.399 1.39109 16.2896 1.11412 16.0938 0.90294C15.8979 0.69176 15.63 0.561735 15.343 0.538574L15.3425 0.539074ZM3.59546 10.9556H2.32446V6.04657H3.59546V10.9556ZM7.95446 10.9556H6.84746V7.64057L6.39946 10.9531H5.60796L5.14196 7.71357L5.13696 10.9531H4.02746V6.04657H5.67046C5.72796 6.39307 5.77746 6.74457 5.82396 7.09607L6.00346 8.34107L6.30046 6.04657H7.95396L7.95446 10.9556ZM11.2725 9.50257C11.2725 9.93757 11.244 10.2316 11.202 10.3826C11.17 10.5187 11.0941 10.6404 10.986 10.7291C10.8769 10.8202 10.7459 10.8812 10.606 10.9061C10.4575 10.9346 10.226 10.9556 9.92646 10.9556L9.92396 10.9531H8.38746V6.04657H9.33796C9.94746 6.04657 10.304 6.07807 10.5175 6.13007C10.7335 6.19007 10.9005 6.28107 11.015 6.41157C11.1245 6.53157 11.1975 6.67957 11.2235 6.84107C11.2575 6.99757 11.273 7.31007 11.273 7.77607L11.2725 9.50257ZM14.5695 9.81757C14.5695 10.1171 14.538 10.3281 14.5095 10.4791C14.468 10.6276 14.3795 10.7471 14.2385 10.8566C14.0875 10.9686 13.918 11.0181 13.7175 11.0181C13.5715 11.0181 13.384 10.9766 13.2645 10.9271C13.1313 10.8563 13.0142 10.7587 12.9205 10.6406L12.845 10.9556H11.699V6.04657L11.686 6.04407H12.8865V7.64307C12.9855 7.52607 13.0975 7.43757 13.225 7.37757C13.3722 7.32141 13.5284 7.29228 13.686 7.29157C13.837 7.29157 13.9855 7.31507 14.126 7.36957C14.2405 7.41657 14.3395 7.49207 14.4175 7.58857C14.4775 7.67207 14.5165 7.76807 14.5375 7.87007C14.5555 7.96107 14.566 8.15657 14.566 8.44807V9.81807L14.5695 9.81757ZM13.119 8.00807C13.041 8.00807 12.9915 8.03657 12.9705 8.08857C12.9495 8.14307 12.9315 8.28107 12.9315 8.50507V9.80207C12.9315 10.0181 12.9495 10.1591 12.9705 10.2186C12.9839 10.2467 13.0055 10.2702 13.0324 10.286C13.0593 10.3018 13.0903 10.3091 13.1215 10.3071C13.1995 10.3071 13.301 10.2756 13.322 10.2131C13.34 10.1481 13.3505 9.99957 13.3505 9.76507L13.3715 9.76257V8.50207C13.3715 8.30157 13.361 8.16357 13.3325 8.10107C13.301 8.03357 13.2025 8.00707 13.1215 8.00707L13.119 8.00807Z" fill="#FFD600"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_799_440">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.399963 0.539307)"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="movie-name">Oppenheimer 2023</p>
+                    </div>
+                    <div onclick="window.open('downloadPage.html', '_self')" class="movie__info-wrapper">
+                        <div class="movie__info">
+                            <img src="images/Home Page/scary4.jpg" alt="movie image" class="movie-img">
+                            <div class="movie-caption">
+                                <p class="movie__content-title">خلاصه داستان</p>
+                                <p class="movie__content">فیلم اوپنهایمر Oppenheimer پدر بمب اتم به کارگردانی کریستوفر نولان است . فیلم بر اساس وقایع واقعی با روایت داستان جی رابرت اوپنهایمر است. اساس زندگینامه کای برد و مارتین جی شروین است. این فیلم قرار است در تاریخ 21 جولای 2023 در سینماهای ایالات متحده اکران شود. این فیلم برای اولین بار برای یونیورسال پیکچرز پخش می شود.</p>
+                                <div class="movie__content-wrapper">
+                                    <div class="movie-ageGroup">
+                                        <p class="movie__ageGroup-title">رده سنیی</p>
+                                        <p class="movie__ageGroup-content">TV-MA</p>
+                                    </div>
+                                    <div class="movie-swiper-genre">
+                                        <p class="movie__genre-title">ژانر</p>
+                                        <p class="movie__genre-content">اکشن، درام، هیجان انگیز، ماجراجویی</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-content">
+                                <span class="movie__time">2h 26m</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M7.99997 16.5393C5.87824 16.5393 3.84341 15.6965 2.34312 14.1962C0.842824 12.6959 -3.05176e-05 10.661 -3.05176e-05 8.53931C-3.05176e-05 6.41757 0.842824 4.38274 2.34312 2.88245C3.84341 1.38216 5.87824 0.539307 7.99997 0.539307C10.1217 0.539307 12.1565 1.38216 13.6568 2.88245C15.1571 4.38274 16 6.41757 16 8.53931C16 10.661 15.1571 12.6959 13.6568 14.1962C12.1565 15.6965 10.1217 16.5393 7.99997 16.5393ZM7.99997 14.9393C9.69736 14.9393 11.3252 14.265 12.5255 13.0648C13.7257 11.8646 14.4 10.2367 14.4 8.53931C14.4 6.84192 13.7257 5.21406 12.5255 4.01382C11.3252 2.81359 9.69736 2.13931 7.99997 2.13931C6.30258 2.13931 4.67472 2.81359 3.47449 4.01382C2.27425 5.21406 1.59997 6.84192 1.59997 8.53931C1.59997 10.2367 2.27425 11.8646 3.47449 13.0648C4.67472 14.265 6.30258 14.9393 7.99997 14.9393ZM7.19997 8.86731V3.73931H8.79997V8.21131L11.96 11.3713L10.832 12.4993L7.19997 8.86731Z" fill="#FFD600"></path>
+                                </svg>
+                                <span class="movie__imdb">8</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                    <g clip-path="url(#clip0_799_440)">
+                                    <path d="M9.93896 6.93207V6.93457C9.88946 6.90307 9.78796 6.88757 9.66046 6.88757V10.0986C9.83996 10.0986 9.95196 10.0571 9.99396 9.98657C10.0355 9.91907 10.0565 9.71857 10.0565 9.39807V7.48657C10.0565 7.26757 10.054 7.12707 10.0355 7.06707C10.02 7.00207 9.99096 6.95757 9.94146 6.93157L9.93896 6.93207ZM15.3425 0.539074H1.48046C1.20175 0.55511 0.938394 0.67203 0.739566 0.868006C0.540737 1.06398 0.420025 1.32562 0.399963 1.60407L0.399963 15.4581C0.438963 16.0416 0.873963 16.4866 1.43646 16.5361C1.44696 16.5386 1.45746 16.5386 1.46796 16.5386H15.364C15.6471 16.5102 15.9097 16.3779 16.1011 16.1673C16.2925 15.9567 16.3992 15.6827 16.4005 15.3981V1.67907C16.399 1.39109 16.2896 1.11412 16.0938 0.90294C15.8979 0.69176 15.63 0.561735 15.343 0.538574L15.3425 0.539074ZM3.59546 10.9556H2.32446V6.04657H3.59546V10.9556ZM7.95446 10.9556H6.84746V7.64057L6.39946 10.9531H5.60796L5.14196 7.71357L5.13696 10.9531H4.02746V6.04657H5.67046C5.72796 6.39307 5.77746 6.74457 5.82396 7.09607L6.00346 8.34107L6.30046 6.04657H7.95396L7.95446 10.9556ZM11.2725 9.50257C11.2725 9.93757 11.244 10.2316 11.202 10.3826C11.17 10.5187 11.0941 10.6404 10.986 10.7291C10.8769 10.8202 10.7459 10.8812 10.606 10.9061C10.4575 10.9346 10.226 10.9556 9.92646 10.9556L9.92396 10.9531H8.38746V6.04657H9.33796C9.94746 6.04657 10.304 6.07807 10.5175 6.13007C10.7335 6.19007 10.9005 6.28107 11.015 6.41157C11.1245 6.53157 11.1975 6.67957 11.2235 6.84107C11.2575 6.99757 11.273 7.31007 11.273 7.77607L11.2725 9.50257ZM14.5695 9.81757C14.5695 10.1171 14.538 10.3281 14.5095 10.4791C14.468 10.6276 14.3795 10.7471 14.2385 10.8566C14.0875 10.9686 13.918 11.0181 13.7175 11.0181C13.5715 11.0181 13.384 10.9766 13.2645 10.9271C13.1313 10.8563 13.0142 10.7587 12.9205 10.6406L12.845 10.9556H11.699V6.04657L11.686 6.04407H12.8865V7.64307C12.9855 7.52607 13.0975 7.43757 13.225 7.37757C13.3722 7.32141 13.5284 7.29228 13.686 7.29157C13.837 7.29157 13.9855 7.31507 14.126 7.36957C14.2405 7.41657 14.3395 7.49207 14.4175 7.58857C14.4775 7.67207 14.5165 7.76807 14.5375 7.87007C14.5555 7.96107 14.566 8.15657 14.566 8.44807V9.81807L14.5695 9.81757ZM13.119 8.00807C13.041 8.00807 12.9915 8.03657 12.9705 8.08857C12.9495 8.14307 12.9315 8.28107 12.9315 8.50507V9.80207C12.9315 10.0181 12.9495 10.1591 12.9705 10.2186C12.9839 10.2467 13.0055 10.2702 13.0324 10.286C13.0593 10.3018 13.0903 10.3091 13.1215 10.3071C13.1995 10.3071 13.301 10.2756 13.322 10.2131C13.34 10.1481 13.3505 9.99957 13.3505 9.76507L13.3715 9.76257V8.50207C13.3715 8.30157 13.361 8.16357 13.3325 8.10107C13.301 8.03357 13.2025 8.00707 13.1215 8.00707L13.119 8.00807Z" fill="#FFD600"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_799_440">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.399963 0.539307)"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="movie-name">Oppenheimer 2023</p>
+                    </div>
+                    <div onclick="window.open('downloadPage.html', '_self')" class="movie__info-wrapper">
+                        <div class="movie__info">
+                            <img src="images/Home Page/scary5.jpg" alt="movie image" class="movie-img">
+                            <div class="movie-caption">
+                                <p class="movie__content-title">خلاصه داستان</p>
+                                <p class="movie__content">فیلم اوپنهایمر Oppenheimer پدر بمب اتم به کارگردانی کریستوفر نولان است . فیلم بر اساس وقایع واقعی با روایت داستان جی رابرت اوپنهایمر است. اساس زندگینامه کای برد و مارتین جی شروین است. این فیلم قرار است در تاریخ 21 جولای 2023 در سینماهای ایالات متحده اکران شود. این فیلم برای اولین بار برای یونیورسال پیکچرز پخش می شود.</p>
+                                <div class="movie__content-wrapper">
+                                    <div class="movie-ageGroup">
+                                        <p class="movie__ageGroup-title">رده سنیی</p>
+                                        <p class="movie__ageGroup-content">TV-MA</p>
+                                    </div>
+                                    <div class="movie-swiper-genre">
+                                        <p class="movie__genre-title">ژانر</p>
+                                        <p class="movie__genre-content">اکشن، درام، هیجان انگیز، ماجراجویی</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="movie-content">
+                                <span class="movie__time">2h 26m</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                    <path d="M7.99997 16.5393C5.87824 16.5393 3.84341 15.6965 2.34312 14.1962C0.842824 12.6959 -3.05176e-05 10.661 -3.05176e-05 8.53931C-3.05176e-05 6.41757 0.842824 4.38274 2.34312 2.88245C3.84341 1.38216 5.87824 0.539307 7.99997 0.539307C10.1217 0.539307 12.1565 1.38216 13.6568 2.88245C15.1571 4.38274 16 6.41757 16 8.53931C16 10.661 15.1571 12.6959 13.6568 14.1962C12.1565 15.6965 10.1217 16.5393 7.99997 16.5393ZM7.99997 14.9393C9.69736 14.9393 11.3252 14.265 12.5255 13.0648C13.7257 11.8646 14.4 10.2367 14.4 8.53931C14.4 6.84192 13.7257 5.21406 12.5255 4.01382C11.3252 2.81359 9.69736 2.13931 7.99997 2.13931C6.30258 2.13931 4.67472 2.81359 3.47449 4.01382C2.27425 5.21406 1.59997 6.84192 1.59997 8.53931C1.59997 10.2367 2.27425 11.8646 3.47449 13.0648C4.67472 14.265 6.30258 14.9393 7.99997 14.9393ZM7.19997 8.86731V3.73931H8.79997V8.21131L11.96 11.3713L10.832 12.4993L7.19997 8.86731Z" fill="#FFD600"></path>
+                                </svg>
+                                <span class="movie__imdb">8</span>
+                                <svg class="movie__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                    <g clip-path="url(#clip0_799_440)">
+                                    <path d="M9.93896 6.93207V6.93457C9.88946 6.90307 9.78796 6.88757 9.66046 6.88757V10.0986C9.83996 10.0986 9.95196 10.0571 9.99396 9.98657C10.0355 9.91907 10.0565 9.71857 10.0565 9.39807V7.48657C10.0565 7.26757 10.054 7.12707 10.0355 7.06707C10.02 7.00207 9.99096 6.95757 9.94146 6.93157L9.93896 6.93207ZM15.3425 0.539074H1.48046C1.20175 0.55511 0.938394 0.67203 0.739566 0.868006C0.540737 1.06398 0.420025 1.32562 0.399963 1.60407L0.399963 15.4581C0.438963 16.0416 0.873963 16.4866 1.43646 16.5361C1.44696 16.5386 1.45746 16.5386 1.46796 16.5386H15.364C15.6471 16.5102 15.9097 16.3779 16.1011 16.1673C16.2925 15.9567 16.3992 15.6827 16.4005 15.3981V1.67907C16.399 1.39109 16.2896 1.11412 16.0938 0.90294C15.8979 0.69176 15.63 0.561735 15.343 0.538574L15.3425 0.539074ZM3.59546 10.9556H2.32446V6.04657H3.59546V10.9556ZM7.95446 10.9556H6.84746V7.64057L6.39946 10.9531H5.60796L5.14196 7.71357L5.13696 10.9531H4.02746V6.04657H5.67046C5.72796 6.39307 5.77746 6.74457 5.82396 7.09607L6.00346 8.34107L6.30046 6.04657H7.95396L7.95446 10.9556ZM11.2725 9.50257C11.2725 9.93757 11.244 10.2316 11.202 10.3826C11.17 10.5187 11.0941 10.6404 10.986 10.7291C10.8769 10.8202 10.7459 10.8812 10.606 10.9061C10.4575 10.9346 10.226 10.9556 9.92646 10.9556L9.92396 10.9531H8.38746V6.04657H9.33796C9.94746 6.04657 10.304 6.07807 10.5175 6.13007C10.7335 6.19007 10.9005 6.28107 11.015 6.41157C11.1245 6.53157 11.1975 6.67957 11.2235 6.84107C11.2575 6.99757 11.273 7.31007 11.273 7.77607L11.2725 9.50257ZM14.5695 9.81757C14.5695 10.1171 14.538 10.3281 14.5095 10.4791C14.468 10.6276 14.3795 10.7471 14.2385 10.8566C14.0875 10.9686 13.918 11.0181 13.7175 11.0181C13.5715 11.0181 13.384 10.9766 13.2645 10.9271C13.1313 10.8563 13.0142 10.7587 12.9205 10.6406L12.845 10.9556H11.699V6.04657L11.686 6.04407H12.8865V7.64307C12.9855 7.52607 13.0975 7.43757 13.225 7.37757C13.3722 7.32141 13.5284 7.29228 13.686 7.29157C13.837 7.29157 13.9855 7.31507 14.126 7.36957C14.2405 7.41657 14.3395 7.49207 14.4175 7.58857C14.4775 7.67207 14.5165 7.76807 14.5375 7.87007C14.5555 7.96107 14.566 8.15657 14.566 8.44807V9.81807L14.5695 9.81757ZM13.119 8.00807C13.041 8.00807 12.9915 8.03657 12.9705 8.08857C12.9495 8.14307 12.9315 8.28107 12.9315 8.50507V9.80207C12.9315 10.0181 12.9495 10.1591 12.9705 10.2186C12.9839 10.2467 13.0055 10.2702 13.0324 10.286C13.0593 10.3018 13.0903 10.3091 13.1215 10.3071C13.1995 10.3071 13.301 10.2756 13.322 10.2131C13.34 10.1481 13.3505 9.99957 13.3505 9.76507L13.3715 9.76257V8.50207C13.3715 8.30157 13.361 8.16357 13.3325 8.10107C13.301 8.03357 13.2025 8.00707 13.1215 8.00707L13.119 8.00807Z" fill="#FFD600"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_799_440">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.399963 0.539307)"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="movie-name">Oppenheimer 2023</p>
+                    </div>
+                </div>
+                <div class="page__wrapper">
+                    <div class="page page--active">
+                        <p class="page__number">1</p>
+                    </div>
+                    <div class="page">
+                        <p class="page__number">2</p>
+                    </div>
+                    <div class="page">
+                        <p class="page__number">3</p>
+                    </div>
+                    <div class="page page--none">
+                        <p class="page__number">...</p>
+                    </div>
+                    <div class="page">
+                        <p class="page__number">42</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <svg class="footer__svg-top" xmlns="http://www.w3.org/2000/svg" width="712" height="107" viewBox="0 0 712 107" fill="none">
+            <path d="M0 0H712V107H71C31.7878 107 0 75.2122 0 36V0Z" fill="#DF2144"/>
+        </svg>
+        <div class="container">
+            <section class="footer__section">
+                <a href="#" class="footer__scrol" id="scrollTop">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18.68" height="22.175" viewBox="0 0 18.68 22.175">
+                    <path id="Path_958" data-name="Path 958" d="M22.175,9.358a1.43,1.43,0,0,0-1.43-1.43H5.063l5.813-5.42A1.43,1.43,0,1,0,8.923.421L.455,8.311a1.43,1.43,0,0,0,0,2.091L8.923,18.3A1.43,1.43,0,1,0,10.875,16.2L5.063,10.788H20.746A1.43,1.43,0,0,0,22.175,9.358Z" transform="translate(18.68) rotate(90)" fill="#e76f51"></path>
+                </svg>                  
+                </a>
+                <div class="footer__wrapper-right">
+                    <div class="footer__wrapper-title">
+                        <!-- <svg class="footer__logo" xmlns="http://www.w3.org/2000/svg" width="58" height="30" viewBox="0 0 58 30" fill="none">
+                            <path d="M5.09375 0.5V23H0.860352V0.5H5.09375ZM8.20625 15.2363V14.9287C8.20625 13.3857 8.49922 12.0088 9.08516 10.7979C9.67109 9.57715 10.5207 8.61523 11.634 7.91211C12.7473 7.20898 14.0998 6.85742 15.6916 6.85742C17.2932 6.85742 18.6555 7.20898 19.7785 7.91211C20.9016 8.61523 21.7561 9.57715 22.342 10.7979C22.9279 12.0088 23.2209 13.3857 23.2209 14.9287V15.2363C23.2209 16.7793 22.9279 18.1611 22.342 19.3818C21.7561 20.5928 20.9016 21.5498 19.7785 22.2529C18.6652 22.9463 17.3127 23.293 15.7209 23.293C14.1193 23.293 12.757 22.9463 11.634 22.2529C10.5207 21.5498 9.67109 20.5928 9.08516 19.3818C8.49922 18.1611 8.20625 16.7793 8.20625 15.2363ZM12.425 14.9287V15.2363C12.425 16.1152 12.5324 16.916 12.7473 17.6387C12.9621 18.3613 13.3088 18.9375 13.7873 19.3672C14.2658 19.7871 14.9104 19.9971 15.7209 19.9971C16.5119 19.9971 17.1467 19.7871 17.6252 19.3672C18.1037 18.9375 18.4504 18.3613 18.6652 17.6387C18.8801 16.916 18.9875 16.1152 18.9875 15.2363V14.9287C18.9875 14.0693 18.8801 13.2783 18.6652 12.5557C18.4504 11.833 18.1037 11.252 17.6252 10.8125C17.1467 10.373 16.5021 10.1533 15.6916 10.1533C14.9006 10.1533 14.2658 10.373 13.7873 10.8125C13.3088 11.252 12.9621 11.833 12.7473 12.5557C12.5324 13.2783 12.425 14.0693 12.425 14.9287ZM36.1479 7.15039H39.9711V22.4727C39.9711 23.918 39.6488 25.1436 39.0043 26.1494C38.3695 27.165 37.4809 27.9316 36.3383 28.4492C35.1957 28.9766 33.8676 29.2402 32.3539 29.2402C31.6898 29.2402 30.9867 29.1523 30.2445 28.9766C29.5121 28.8008 28.809 28.5273 28.1352 28.1562C27.4711 27.7852 26.9145 27.3164 26.4652 26.75L28.3256 24.2598C28.8139 24.8262 29.3803 25.2656 30.0248 25.5781C30.6693 25.9004 31.3822 26.0615 32.1635 26.0615C33.2963 26.0615 34.1752 25.7539 34.8002 25.1387C35.4252 24.5234 35.7377 23.6445 35.7377 22.502V10.8125L36.1479 7.15039ZM25.4838 15.2656V14.958C25.4838 13.3467 25.7426 11.9355 26.2602 10.7246C26.7777 9.50391 27.515 8.55664 28.4721 7.88281C29.4389 7.19922 30.5814 6.85742 31.8998 6.85742C32.9545 6.85742 33.8383 7.05273 34.5512 7.44336C35.2641 7.83398 35.85 8.39062 36.309 9.11328C36.768 9.82617 37.1244 10.6709 37.3783 11.6475C37.642 12.6143 37.8471 13.6738 37.9936 14.8262V15.5C37.808 16.9648 37.4809 18.2881 37.0121 19.4697C36.5434 20.6416 35.8939 21.5742 35.0639 22.2676C34.2338 22.9512 33.1693 23.293 31.8705 23.293C30.5619 23.293 29.4291 22.9463 28.4721 22.2529C27.515 21.5498 26.7777 20.5928 26.2602 19.3818C25.7426 18.1709 25.4838 16.7988 25.4838 15.2656ZM29.7025 14.958V15.2656C29.7025 16.1348 29.8197 16.9307 30.0541 17.6533C30.2885 18.3662 30.64 18.9326 31.1088 19.3525C31.5873 19.7627 32.1977 19.9678 32.9398 19.9678C33.7113 19.9678 34.3412 19.8066 34.8295 19.4844C35.3178 19.1523 35.684 18.6982 35.9281 18.1221C36.1723 17.5459 36.3139 16.8818 36.3529 16.1299V14.2109C36.3334 13.5957 36.2504 13.0439 36.1039 12.5557C35.9574 12.0576 35.7523 11.6328 35.4887 11.2812C35.225 10.9297 34.8832 10.6562 34.4633 10.4609C34.0434 10.2656 33.5453 10.168 32.9691 10.168C32.2367 10.168 31.6264 10.3828 31.1381 10.8125C30.6596 11.2324 30.2982 11.8037 30.0541 12.5264C29.8197 13.249 29.7025 14.0596 29.7025 14.958ZM42.8785 15.2363V14.9287C42.8785 13.3857 43.1715 12.0088 43.7574 10.7979C44.3434 9.57715 45.193 8.61523 46.3063 7.91211C47.4195 7.20898 48.7721 6.85742 50.3639 6.85742C51.9654 6.85742 53.3277 7.20898 54.4508 7.91211C55.5738 8.61523 56.4283 9.57715 57.0143 10.7979C57.6002 12.0088 57.8932 13.3857 57.8932 14.9287V15.2363C57.8932 16.7793 57.6002 18.1611 57.0143 19.3818C56.4283 20.5928 55.5738 21.5498 54.4508 22.2529C53.3375 22.9463 51.985 23.293 50.3932 23.293C48.7916 23.293 47.4293 22.9463 46.3063 22.2529C45.193 21.5498 44.3434 20.5928 43.7574 19.3818C43.1715 18.1611 42.8785 16.7793 42.8785 15.2363ZM47.0973 14.9287V15.2363C47.0973 16.1152 47.2047 16.916 47.4195 17.6387C47.6344 18.3613 47.9811 18.9375 48.4596 19.3672C48.9381 19.7871 49.5826 19.9971 50.3932 19.9971C51.1842 19.9971 51.8189 19.7871 52.2975 19.3672C52.776 18.9375 53.1227 18.3613 53.3375 17.6387C53.5523 16.916 53.6598 16.1152 53.6598 15.2363V14.9287C53.6598 14.0693 53.5523 13.2783 53.3375 12.5557C53.1227 11.833 52.776 11.252 52.2975 10.8125C51.8189 10.373 51.1744 10.1533 50.3639 10.1533C49.5729 10.1533 48.9381 10.373 48.4596 10.8125C47.9811 11.252 47.6344 11.833 47.4195 12.5557C47.2047 13.2783 47.0973 14.0693 47.0973 14.9287Z" fill="#1EB7E8"/>
+                        </svg> -->
+                        <svg class="nav-logo__img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="226" height="154" viewBox="0 0 226 154" fill="none">
+                            <rect x="0.599976" width="224.8" height="153.236" rx="12" fill="url(#pattern0_801_527)"></rect>
+                            <defs>
+                            <pattern id="pattern0_801_527" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_801_527" transform="matrix(0.00833333 0 0 0.0122252 0 -0.0501324)"></use>
+                            </pattern>
+                            <image id="image0_801_527" width="120" height="90" preserveAspectRatio="none" xlink:href="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABkAAD/4QMvaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA3LjItYzAwMCA3OS4xYjY1YTc5YjQsIDIwMjIvMDYvMTMtMjI6MDE6MDEgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMy41IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGQTQ2NjY5QTdENEQxMUYwODgxOTg0OEMxMkIwOEVGMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGQTQ2NjY5QjdENEQxMUYwODgxOTg0OEMxMkIwOEVGMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZBNDY2Njk4N0Q0RDExRjA4ODE5ODQ4QzEyQjA4RUYxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkZBNDY2Njk5N0Q0RDExRjA4ODE5ODQ4QzEyQjA4RUYxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQICAgICAgICAgICAwMDAwMDAwMDAwEBAQEBAQECAQECAgIBAgIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD/8AAEQgAWgB4AwERAAIRAQMRAf/EAL4AAQACAwEBAQEAAAAAAAAAAAAECAUGBwMJAQIBAQAABwEBAQAAAAAAAAAAAAABAwYHCAkKBQQCEAABBAECAwIKCAMGBwAAAAAEAQIDBQYABxESFBMIITHSk7M0VHQVlkFRIjIjlRYXUmJWYTNjNdVXcbFCcnXFGBEAAQMDAgMEBwMHCgYDAAAAAgEDBAAFBhEHEhMIITEUCUGRsSJyNBVRUpRhMiMzFhcKodFCYtIk1JVWV3GBktUYGbJzdP/aAAwDAQACEQMRAD8AoAcWU001GkkNTrCl4JNIicXTyOcvBHeNzlVV+tdWMVV1rrXjstLHbVRHXgH0J9iVF6wv2onz8vlahqtTeQz9wfUlOsL9qJ8/L5Wmq05DP3B9SU6wv2onz8vlaarTkM/cH1JTrC/aifPy+VpqtOQz9wfUlOsL9qJ8/L5Wmq05DP3B9SU6wv2onz8vlaarTkM/cH1JTrC/aifPy+VpqtOQz9wfUlOsL9qJ8/L5Wmq05DP3B9SU6wv2onz8vlaarTkM/cH1JTrC/aifPy+VpqtOQz9wfUlOsL9qJ8/L5Wmq05DP3B9SU6wv2onz8vlaarTkM/cH1JTrC/aifPy+VpqtOQz9wfUlSgSynGhI4khydYKvBZpFTi2eNzV4K7xtciKn1LqKKutSpDLSR3FQR14C9CfYtRz/AF433sj0z9QXvqZG+Xb+AfYlRNQqdTSlNKVlqmhu76ZYKSos7aZvDmjrgiTHM4+JZOwjkSNP7XcE171ixfJMnfWLjlvmT5Cd4x2XHVT4uAS4U/KuiVbLc3erZ7Za1jet3spx7GLUaLwOXS4RYIuad6N+JdbVwvRwtoRa9mlbGXtnuCDA4krDcjjgYnM+RtUVKjG/xSJDHI6NqfSqoiJqrZ+zW61sjLLm49dxjCmqkkZwtE+0uASVE+1VRNPTVhsX8wvoZzO7hYcd3ZwJ+7uFwg2V4hsq4X3W1fdaFwl9AgpKXoRa0hzXMc5j2uY9jla9jkVrmuavBzXNXgrXNVOCovi1bcwNs1bcRRcFVRUVNFRU7FRUXtRUXvSswI8iPMjty4jgOxXQEwMCQgMCRCEhIVVCEkVFEkVUVFRUXSptdVWduQglTXHWZTuHAevEnMnVFXhx7IeOR/Dj9PDhr0bTZLzf5aQLFEkzJq9zbDRun/0gJLp+XSqQzzcnbva2xlk+5l+s2PY4GqFKuUyPBjoqJrpzpLjTfFp28PFqvoStum2u3FghWeTCskSNrVc5W1ZUj0aicVVYo2PlTgn8uq8kbKbtxo6ynscvCMomq6RnCVE/KIipJ6qxhtfmOdBl5uo2WBu7gC3AzQBQ7xDabIlXREF51wGV1XsTRzRa0eeCcaWQcmGUeeJyslhnjfFLG9PG2SORGvY5PqVEXVtpMaTDfKLMbNqSC6EBiokK/YQkiKi/kVKzBs95tGQ2xi92CXGnWaSCGzIjug8y6C9xtutkQGK+ghJUX7a8tSK9KmlKaUppSpYHrwXvY/pmainfUmT8u58BexaH+vG+9kemfovfSN8u38A+xKiahU6mlK69s1txHuJkzxz3yR0VPAw63WJyslIR8nZi10UicVicY9rlc9OCpFG/lVHcq6v5087RNbt5mUS6EYYzb20elKK6E4ilwtsCSdoq6qEpF2KjYOcKofCtatvNk6+ZvQd08s3zCmmJG82VTHLfZBfFHGYqttcyZc3miVBeCC2TQtsrqJy5MXmg5HR4VulmOc4Xs3SABMr2ROma9tTj9PDDA+VkKMbKTM5eWOGFHK1Hyv5pJHr4EeqO4bFtwNzNu+nvHItubiiBOCqRYMQABSQNEJw17BAEXRDdPiMyXsRwkPTkc6VOjXq281/d29ZbLvj0lmI4B3rJb4+/IbZN9TNmIwCcTsh8hRwmIUdGo0ZkURxyK2TCHyqn71FKScyC7xg2qBkkRvXCWDLR0DHLwSScVQgnuY3xu7NzncPE1y+DVj8f63sdm3MY2R2WRBthnpzmn0kqCL3EbXJZJUTvLgUi014QJdErZXut/DX7tY7hjt42h3FtOTZkwwp/TptsO0BJMU1VqPMSfPbBw9OFpJLbLSkqI6+yGpp0/ONqcN3PDDtGujCOnaIWNkVTHC6U6vl5JVZOn2YTYiRX/hSP4uicrXIqt5mOvRuXsbt7vTb497BQjXJ1GnW58UQUnmC4S0PuF4XG1/RmWpNkokKqHG2eujo58y/qv8ujKrttw+D93w6Ec2FLxe9OvizbrmzzGUcjr7z9veiywRJkZjgalti6y6IP8iXGmW9tgmyWKwqwJgAavQYICviZJZ3BjWK5XSyyOY8iVrOLpJ5n8GIqJx4q1q/ff77tj03YO2rUYYtv4kbZYYFCkSnUFVVSIlRXCRNVcedPQUVE11UAWl9rts+tDzgepSWEy7u3rKUbKVPuVyeNq02OCbgggMstAYRWSPRuLb4DHG8aEfL4AkyG+Oh96yskOSM/DzRq5z0RSRrWEsuOPjwV6hyBiRPVE8PKkyf8dY/W/rksztyRq52CSzaVJE5jckHXRH0lyiaaFV9PCjqf8VrazlX8NDuHCw8puF7qWi4Z4DJEkSXZpEKE44iao2k5qfNebFV7OYUE/tUBTu65k+G4XvHi49lCg8kh4SkUWRjQow0WRUc1jZ+KMlmgjmarJxpfEqOT7D0Rzb95pt7t11BYU1eI3KJ6VG44VwbDR5ou1EQ/zSMBNFB6O53KhCnLdFCHVx07dWPVv5UnUdO2/uyzmYFlu6RsixWU+p2+Y2iiThx9FcZYkOsGMiBdYiLxgbLhLKhuGw983rStLp7KwqT4+yNrDSQC40XijCBJnwTI13BOZvOxeC/Snh1qAvdnnY/eJViug8FxhSHGHR70Rxo1AkRfSmqLovpTRa7+tuM/xndbb6x7nYW8sjEchtMS5QnVThI4s1gJDCkOq8B8tweMFVVAtRXtRaga8uq0ppSmlKlgevBe9j+mZqKd9SZPy7nwF7Fof68b72R6Z+i99I3y7fwD7EqJqFTqaUqzfdjymvp8muKA6Vg78mGBSvmlcjWSH1by3Rgo5fAkpcJ0is4qnM6NGpxc5qLmb0YZtasfzK4YtczFpy8ss8gyXRCfjK6os6r2IToPGoa6cRAgJqZCi87/APET9N+c7q9PWKb3YZGenQ9u7hcFubDQqbjVtu7cIXbgopqpMw37dHF9RRVaZknIPhYYecDrG/e015m8tbkWNJGXY1oLq4qqlmjHeSI2eYqGYKWZzIOojknej2Pc3naqcq8U4Ovr1R7FZNuS/DyzD+GRdocZWHIxGIK40hk4BskaiHGJGaEJkPEKjwrxDwlrJ8k3zONm+jy25BsT1Aq9a8DyC8BdIl5aYdkhEmlHYhvsT2WBckeGdajRyZfYad5Dguo8HLd5rNaabY3cu3PjDfjhFVEsiNnPtnxCiDs4ojpVXnfMQjU+iJkjl+rWHGPdNG8d/uYW9y0OwWFJEN+UotNNpr2kvapmifY0BkvoT010I7secl5e+1uFv5XFz2DktyFhTj22zA9MmynNFUWUTlhHjES9inNfjNh/SLXQV+iGM0cWNY9TY/BM8iKnrhAGkSJyvnUeJsb5nMRXIztXoruVFVGovBPFrbPhuNMYdiluxWM4TrNvhtMIZdinyxQVNU1XTiXVeFFVBRdE7ErhC6hd4rn1B755bvfeIjMC4ZVf5lyKM0vE3HSU8TgMCaoKucoFFtXVESdUVcJEIlSuT757ZWW4dPVzUcsXxihlMkHCIlSGE8c9oyEwtmeqRwlMcJGsavVGKnMiqnFFSxnUxszed2cfhSMaMP2gtbjpAyZIAPtvI2jgIa+6LiK0CgpaAqcQkQ6oqbM/Jr8w7b7oT3VyO17wxpCbV5rFgtyZ8ZkpD9tlW45RRXyYBFdfiGE2QEkGUN8S5LjTbnAYFT8PZPc8w1oKYmcM5X8ryTJBRwok4/akcW6dYpGNTw/hq9y/QirrAC39OG9NwuKW1LFJZPi0Vx0m22RT0krqnwkid/uKar/RRV0SuqbK/N98unFMRPLz3Ns9wYRpTCLBalyp7q6e62MMI6PNmS6IniBYbBV1dMBRSS+WFUAW2OBBVlnZwqPSiFnWtnK5YxWSzzTHGPj50RzRoZJVZH4Ec5rUVU5lVNbQducVt2zG18ay3mY34W3MOvSZBKotoRmbzqjr2o2BEoh2IRIiKo8ZKlcVXV3vflvmJ9a133E29x6Ul7y+5w7fZrSyKOzHGY7DFvgA7wKolLfbZB6SqGTLLjhgLqsNCdfN3MbtmS5VkN9FGsUNtbnGwRu4I9g8073Dtk4cU7RIeXm4eDm460/7g5I1mGcXbKGAUI86e88Ar3o2ZqraF/W4OHi/ra13/dKez8zp/wCmrBdlLk+Em7Yzi9vgSXQVVbclMRgGSTWqIvKV/mcrXtRvhRe2ta1R1ZAU0pTSlSwPXgvex/TM1FO+pMn5dz4C9i0P9eN97I9M/Re+kb5dv4B9iVE1Cp1NKVmaOjvb85oeP1thZnsb26R10Es0sLI3J+O90SL2DGPVPtuVqI5UTjxVNVDjWNZNlNySBikOXNuYpx8McCMgQVT31UU9xEXT3lVERVRNdVSrU7x7x7NbJ4e5lO+WQ2PHcLePw6u3SSywy+bor/dwF4k8Q4YIaqw2Lhk2JkocAkqWtxXNO8Hj48QVnhFlk4sLUZHLZBzxWaMb4musIH8Z14f9U0cj1+l2s5cI3E6rsViBbrzjcy8wm0RBKQ0YyERO5FfAvf8AidBw19JLXM91J9JXkYb336Tl+3e8Ng27yKW4rjjVqnR3rSRl+cQ2yQ3pGRV7UahSYsce1BYTWt6/dXdX6dk7bj/5SZP/AFC6ucm+G+OnbtvO1/8A0n/hawxLy1PLTVV4Or/GUHXs1tDC/wAv1pPYlfv7q7qf7JW/5rN/o+o/vx3v/wBt5/4kv8JUtfLS8tj0dYGL/wCTMf8AfEr+v3W3R/2RufzaX/RtfpN8d7PTtvcPxRf4SpJeWl5cH9HrBxT/AJ2Vr/vtRjd2t1IRpZY9lbaJY2OeskhhZjWoiKvN041VFNKieNUaqLr47jvvvfHhm+1tzPAgFVUieddRNPTy24wmWnpRF1qoMS8sLy17rkEa2TurrGJLb7ogjbcCFBI1JUTh8VKvLrDSl3CTgKmq9y9y1SzvdbNM7c4S8LaJXRTcyUYETwwWSxvXlUlj3yElSxOTwds9/I5OLUavHWDO5++O4u5xFAySQke0A5r4NgVaZEhXs5gqpOOEK93NMuFU1FBXWumPou8tLpH6L2G8o2etZ3TPZEXhXIbk8E64OMugnEkVxsGokRl4VVS8CwyrzZILzjwoOmewPYrMc1bGaRF+nKSREc2ytIZO3JYvicBXcYiCGqnhR71iicn3Xqvg1VO1/TJuDuMIXKUH0jGzTVJEkC43E+1iPqJuJ6UM1bbJO0XCXsqyfWr5zvSj0ivSMQsklc93gYJQO1Wh9vw8RxO8bldOF2NFJF1EmGAmTGzThejNCvHWL3U2rN2xNq4pbSC3BuIy3glMHcHOkgLhkKiIEWYhI+RDI1a5JHI/ivi4a8Te/ZC47L3GEw/Nan2y4A6rLggrRoTKto4LjSk4g6I62okhkhar2Co6Vcjy1/MnxHzFMRyK42zHJuL5likiEFwhuSRnRlbuIyliPRZgsRSc4ygyhdaOM2TPAC8TiOIqco1YytmFNKVLA9eC97H9MzUU76kyfl3PgL2LQ/1433sj0z9F76Rvl2/gH2JUTUKnU0pXU9rt0rDbE6ynGrBrYO3iFjNEmlcLNzhOncLKOY2KdYlZ1UiOarHNeip4lRFS92ye9t02YuUyTEhszrdPbbF5oyVs9WVNWybdQT4dOYaEKgQlqmuiiiprb8x7y3sI8xHD8fs9+yG4YzlmLSZbtvmsMjMY4J4xhlsyYRvR0eQ1hxiacGQ04woEgqQOuAV6drNxF3KoTbpalKdQ7aas6ZDeuSRIhAykm7XphVbzdXy8vL4OXjx8OtmmyO7S7xYxJyIoH09Y84o/L53O4uFppzj4uW1przeHh4V/N117ezjM8yboQb8vvei0bSNZOuVBdcZZu3ilgfTlbV2bOhrH5Pi5iHw+C5iOc1NUd4eBFHUum6vNWvGmlKaUppSqiyVVXL3onwS1wUsEgPxB8Eo0UkLjv00k/WLC9qx9T27e05+HHtPt/e8OsCHbHZX+tcor8SM5GONz1AmxIFe+nofN4FRR5nGnHxaa8fv68fvV1Hwty9xbb/DiM3m2X27RryxefprchmU81IG3ftWUfwKPgYu+F8OSxuTx8HhtI2nITl1brWe9cuFU472P38D/AOzJ/wDnj+tfHXV+sxf4bj7YNdXn8Mh8nvV/9uJf/HJap7rX9XVTTSlSwPXgvex/TM1FO+pMn5dz4C9i0P8AXjfeyPTP0XvpG+Xb+AfYlRNQqdTSlNKVejusFDuxHIQknjUqHI3EyDI9O2jHIrK+KGZzPvJHLILI1q+JVYv1a2Z9EU2KeBXa3C4CzW7urhN6pxi25HYEDVO/hImzFF9KgSeiuND+JNxy9x+qLBctdiSBxuXgQxGpSgvIckxbtcnn44ufmq6y1LjOOBrqIPtl3FVodZq1zk00pTSlNKVR3Ms6rMP7wpuSyRPtA64YauNiAli7aOWWiiCIbGr1SGScR8nBzFc37TVaqtVF4a1NwtzLNt/1YScxeAp1viMtsOiyQ8YkUIWXEFVXhU2iJeIFIfeFQUhJF07Guk/oz3B6qvIrtHT7AktY3ld+nyrpAeuLLyMOMtZE9Pik6LaK83HnNtIrUgGnf0Ljchtp5shQrb4pm2MZqF12O2sBzWtapAvHsjw3KifYLCk5Z4fCvBHcFY5U+y5U8Os8sG3Iwzce2/UsRnNSRRE42/zXmlX0OsloYdvYhaKBae4RJ21y+dTHSB1EdIeXrh+/ONzbO+ZkkaXpzrdOEVX34U9rijPoopxE0hpIZRUR9lo/dSsXexVO0wNOKcyMyZVbxTmRFdQIiq3xojlReC/TwX6tYYddSjzcXHVOJBuPZr26KsHRdO/RdF0X06L9i10T/wAMgDiQN6XVEkZV7EkQtF4VVByRSFC00UhQhUkRdRQhVURCTWn2tf8AXVPTSlSwPXgvex/TM1FO+pMn5dz4C9i1vOJ7aZ5ubkFhVYLi9nkRUBc3VyixxwVtd2qHkwfFbg2QWoqurjAmSDqZ4u3kYrI+Z/Bq1LjWHZPmUwoWMwnpbw/nKKIjbeqGQ8x01FpriQD4OYY8ZJwhqWiVjb1HdYHTN0eYVHzXqVzKz4pZ5If3VuSbj0+dy3YjD3021RG5F0uXhjmxSmeAhyfBsvDJlcmOhOjnM72D3f20rY7jM8Gs6yodzdraikVl7Whcs4YrPip2PnWgtP1JR8UcHVOh6iRyti51a5E9jJtrs+w+IlwyG2vMwF11cEm3mw94BTmGwbgtcRGIhzFDjJdA4lRdLSdNPmedBnV9lruA9P25FnvGdhw8u2yWLhZ58vVmVJP6bDvcO3SLp4ePCkvzPpzcrwTIC7M5AOtEes5XttmuEU2IZBk9L8MqM8rFuMUL+I1JvxWtaLWGqT2FeeWUDwFuBnchLIZPxOHLxa5G+PfMPyLHLfAut6j8mBc2ebGLmNHzW+Fs+LhbMiD3XW10cQC97TTVCRLxbJdXfTx1F5/ne12zeQ/WM72zvCWrJYvgLnE+mz1k3CIjHOnQ40eZ/eLVPb5sB2Uz+g4+ZwOsk5ouqZrJGslVXFtRltPprI6qNa1WIVXlTCT8jlRXRrJA9jnRuVE4tXi1eHhTXsWPIL7jU9Lpj0yTBuIoqI4w4bR6L3ipAqKoromorqi+lKoHcnarbPePGHML3Zx+z5JiThoZRLlEYmx+YKKguI1IAxF0EIuB0URwNV4STWtu/dXcj+tsj/MyPK1Xn78N3/8AUl3/ABDn89Yvp5avQGnZ+6DAv8pjf2KfuruR/W2R/mZHlafvw3f/ANSXf8Q5/PT/ANa3QH/tBgP+Uxf7FP3V3I/rbI/zMjytP34bv/6ku/4hz+en/rW6A/8AaDAf8pi/2K8ptz9xJ4pIZc1yR0crVY9qWpbFc1ycHN5mSNeiKnj4LqS/vTu1JZKO9kd4Vo0VFRJLqaovemokipr+Ra++1+XR0H2a4s3a3bRYAE+O4htkVmhOIJiuolwONGCqKoipxCuioip21p4gh1qcMAAMXZWdkXCIGGJDMYcecZM2EcYYeFshBRZREiMYxiOe97kREVV1bplmXcJYx44uPzn3EERFFNxxw10QRRNSMzJdERNVJV0TVVrLK9XrGMGxiXkWRS4FnwyzwHZMqVJdaiQoMKI0Trz77zpNsRosZhsnHXXCBploCMyEBVUsTXd2XvKU4MWW1WCX9b2Nb8XikBvKMXIWCqL1iwtoobtmSJYuhTlUHpurWX8JYu0+xq8No2p3sx9AyexQZ0OS2zzRNmQ03JQeHjUUaB5JHGqdiscvmKX6NW1L3a1LZ95unk67qXeR0/bmbiYlkEKXd/pbzFwst2mWFySklYovFd37Qdg8CLq8YXnx/wBMBj+/BOSKiSK0OHBN2txEzu+lrri5l20ClnzmW9sxAbHGxRIreeaAgC9ODsFlFbSF84w8T5Y3xK1WI9zUdTky2bl7hP3O+3ZZtwmWdpfGHKeRHY4AjpKCg+4LicHKd1abFVEhVFFCVEXJSPv30B9GcfbTaXFpuNYpZd37kDeHsWK2SJFvv8qU5a2WpDMyywpUHgkrdrXy7hOktMPsyG3QkGw04beBA22zWzwO63NBpe3wfHbOKnuLv4jUxdHZTyVMUQ3w2Y+O3I5pL0VOeId8adr4XcGv5aei4fkUzGJOZRo/FjcR5GnXuY0nA4qtIg8tTR0tVeb7RBR97v7C0vDk3V308Yd1M470d5HkPhuo3K7O5dbVaPAXNzxUBlu5uuP+Pahna2OELPci5Umay8vhtBbVXmEd0XVM1kjUsD14L3sf0zNRTvqTJ+Xc+AvYtWs2b7wtNt9im4G0+a47Z2OD52Xk3xC6xcoWHK6f9QY/Jj1j0YVsjqiz7aMMXseeQbpXdrI7qUVkLb4ba7rW/FcbuODZFEeexu58/jejEKSWufH5DnADv6JzVAb4NSb5a8ZlztRbTSV5jnlWZ/1T9RO3XXD085XZ7T1G7aBZPA2nIo8l3G7p9Ev6XyD4qXbFS6W/lHKuKy+SxP8AqIeCis/SVB+c5gbrcTaPHcNtsP2qJ7wzRci6+WybkG4VPi1MLPNVS1fYz4zjFba1GVVl7GQz4nGS0Ul0QEEUJDGSTJr4bjlmB2nH37BhB5WjMvjVznzmozQkrat6FHjNutSW3kJPEC4jbiiw0DboiblVvt50o9de62/9i3662ofSqV4xPwTcArJg90yK6yWWrk3ceazkGQz7bdMbuFnNh1cfft7lwgNyb1cps+1SJEWAqbNlPeAw27/+UukrMmj/AGL/AE7+reoDqmfEfhH6C6n9Odncy9Xz/pYjk6npOPPHx5eLuT2b1unj9y/YfkMzE/ZnkeK4gbTmcrwXFyNHV4tfDHpzOV3hrpqvDZ7Zjyut/wDbr/zc+t3jDnf/ACT+u/szyJdyLwP1T9tPD/XeZaWvC8H7Rwud9P8AqnDypXBzOBnn9Duu91jVwR3i4CU3DKodzsPrcf26qDUAnDxcxuEWuP3UpdfJksodILZ3Rsc8jgUIfMxqvkb2iI1asuO/NnuDuWtPfVjtl5gNsQGj4CCMfg3WHlIFkKDIuPGJkrPGpoikScSIi4q7feRLu/gNq6TrlaF2qhbmbN57PvedXSJ41mXkUQsvtt7tLcWaFgblXeRb7TEfhsheFhNxHHBjxnfDGbo6NtH3jMPwHb6pxT9MlYzk9LehXJOa0FaTcS5q0WxyY8YLLK+iz3aOwLFpmXMMEA51jcATwtkbIM38PlpnA927Bi+KsWPwZw7zHkg6UthsnVl8LkgxCUDM21uELSOgAA9IlMGCEhsp7umSPXV5TW/PU/1TXze1Mwh5js3kONy7UxiV7uEe1t4kUiDj0KRLxqbeML3OgxZF1K1S5kybZ7Di96hy3IrsS8PL4nmZPA+8hgOJ94zcfdwqkvUxjMaI2vrq6hx2lq7SIw07FjnkWVXJlU9epUz6ad5hcZr3mlyKR2MXbOii+3GN3cXse7d3zx6NJ+jXCMYNtssMtuIZnGNScbWSTfEqtGrrovKrzpK7y2+YoBR/Ux5SPU/vf5TW0nQpZsixtd5MBySJOnzrzfbtcbc7EiQ8jhgxb7iGNszkjtDdYbVrtj1pabtFsYC1JOnJb2ps3BX3eeKN2HwrAqc7JqrcmgyYuzsMnECpqoAKmkJy3pK/DrKsMZZ4z0lZcCARRAC18UFayYGNUDcsMnmXPeZ+TtjbsYt7sxjL4swnDkiDTYA0pSuEIjjZo5H4W3WmRFhtgQjo5GBUjqrZ3J2z8m2y475mW4fU1nttw69dIuUYdGt8LHpUu63KZLurbGM+Jm5TAuEU7fkPirha7neZEm9XG9SZd+dgZHKBy/NBPiStwt89qM37wuIbpR0OYVuKVtEONk8YVXjYGYWd2AzIGBWAk0VuTBGVHATXQR2LDBrQGIZJA5hyBxZmTsr3KwbI91oGajFns2NmMIyEBuOEpx4EfQHBVHSRCRCYAX0dbksi2hR3GnWmXB8bpY8tvre6dPKtzzoulZNgV43uvGSPyMeOXcb/ADcXt1omnYzlwZTTlsYeOObzF9mvWJy1z8du8ieUW/wLparpeYD+zbud5fbbcHazPcLHrMwsb7IcwiynFj8gqUcHjTfjFVO8aIq53NzsyuKipYTBmuqoq8BWFOjiCGjkl5/ZzzeLEMqwm6Y60zPducuekmMb7XuR/wBK2SihO3GabZIyjraLGFhjRxQCOyJHxWe6FPJ/6uelnrT2x6hLpeMCtW2eKYE5jmRQ7Jc1GXfy+l3FkZDke07fYbFnR3bs7a55hkcm93pHLc1Km5DdpMaEjFU9qNwzNqdwcaz4CuFtp8fKKe+tLllHiNDsa4yosYGEwo54pT6+wl7CZWSsim5Hujla1Y3WQwfK5GEZVDyiK0D7kUyVWyVRQwcbNpwUJO0SVsy4C0JBPhIgNEUF3a9bnStj/W10s5f0wZLdZljt2Uw44hcIrbbzkSXAnRbpAeKO7wjJjhOhR/FxUdjuSYnOYZlw3nAlM2ZyTefu+5NnU28k4G/lTuQQLWGzU2N5FjFBjS2ldjodHJRw5TXPhzEKitBw1FJNgbEW4eaR7Io1ckTbx3fcPau8ZMW4LrWUMZeYNmrUd+OxH5jbAMqykltUlgy4Ictx0EF1QMyEBVUBNPe0nl8+aVs/01x+gC23PphvnSRFmXCI1db9YshvWQJbp99lXcLw7jk8XcWl3i3PykuNvtUw5FsbmxYsaRNkttnNc1nBe8BjVBSd4YO8h3DtLDd3DwMfoDby8Aze3HMDxfJqJZcpycxuLTkitnuIexdCC98IrOz5XLG10njY1unZ7Xbcrj3Ibs9Lv0AGGDeeCY6JhGkM6yZBeGUh1dDgUGVUW04NFUEU7w9Sfldbv7nbi9KuQbcSNqrNi2xOezL3eolos83ELY/ElZFj95RvHceilkbMeQTNrl+KCXeGm5Nxe8XzWhluNxWLd4UMPu55xtBkV3uHJk9yU+LGbkR0VtV1eNDA41ALiLyDsorbCtoj2U5QU8A8Mg8Ihj1SKbi+FyybrR4+0lywG7Sbst5kGqR3R0dbbjiEdBiqRyW3G2TRpxkwASAGnSVAc1JtW9PlW5BfvNl2468tqMc2qa2bx+GLmQWqULltuNxyB+ZkD0nJxYh47cIM+8Qiuluu0SZNlMTZdztTLbk2AoMXBrpm0+9ONUexgi7yoLmM+3WYUWS7K00GbgSZQRb1cdoJU1ZtLTGrfY/RYiWFLKhV1HIK8E2OKCCVsQkEtZYNuJZ7bto2u4PBcHLTPZkWhoZgLJJ1tHBabNlo+cwzFICJHJYk2rLwg02aNsNnh71weXnu/uP5ks5vy/ymYDbt18CvGP7tXV7EZreOsWy4nbpNzuMS7XaIlmvd4yeNLjRyt+JPMXFu72mVMudxhPTr5cYdJbfJr7McsnyfJ7Qq5vrm0gLsbEtzVlnlWSKNjGMjbHAMKNBG2KCCJrIYIWMjjY2NrWpjXd7xdMguj15vLxyLnIPiccLvJexERETRBEURBABRAAEEAERFETpA2o2f2y2B2qtOzezdmh4/tnj8DwsCBFQkbZbRSMyIzI3n5D7xuSJcuQ47Lmy3Xpct56S866eCP9eN97I9M/XmL31cmN8u38A+xKiahU6mlKaUppSmlKaUppSmlKaUppSmlKaUppSpYHrwXvY/pmainfUmT8u58BexaH+vG+9kemfovfSN8u38A+xKiahU6mlKaUppSmlKaUppSmlKaUppSmlKaUppSpYHrwXvY/pmainfUmT8u58Bexaz5PrZ3+Q+vnf333/W5vF/h/wfycNfte9e7vrzmf1DfzH6sO7u/NT+X7fy614fLmoeqpn4qny5p6qfiqfLmnqp+Kp8uaeqn4qny5p6qfiqfLmnqp+Kp8uaeqn4qny5p6qfiqfLmnqp+Kp8uaeqn4qny5p6qfiqfLmnqp+Kp8uaeqn4qvcb1sH/ACH18H+5+/63D4/8P+P+TjqKd6d3fUt79Q58x+rPv7vzV/l+z8ulf//Z"></image>
+                            </defs>
+                        </svg>
+                        <p class="footer__title">سینما سیتی؛</p>
+                        <p class="footer__title-text">رسانه‌ای برای همه</p>
+                    </div>
+                    <div class="footer__wrapper-text">
+                        <p class="footer__text">وبسایت +++++ فعالیت خود را از سال 1396 شروع کرده است و به صورت حرفه‌ای به دانلود فیلم و سریال پرداخته است. در این وبسایت شما میتوانید هر فیلم و سریال یا انیمیشن مورد علاقه ی خود را به صورت آنلاین مشاهده و دانلود کنید. همچنین زیرنویس ها و دوبله هایی اختصاصی برای تمام فیلم و سریال ها تعیین شده است. </p>
+                    </div>
+                    <div class="footer__wrapper-content">
+                        <div class="footer__icons">
+                            <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="34" height="33" viewBox="0 0 34 33" fill="none">
+                                <path d="M26.2188 10.5L6.10938 17.25L13.0703 19.5M26.2188 10.5L13.0703 19.5M26.2188 10.5L20.0312 26.25L13.0703 19.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.9375 31.5C25.4809 31.5 32.4062 24.7845 32.4062 16.5C32.4062 8.2155 25.4809 1.5 16.9375 1.5C8.39411 1.5 1.46875 8.2155 1.46875 16.5C1.46875 24.7845 8.39411 31.5 16.9375 31.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="38" height="37" viewBox="0 0 38 37" fill="none">
+                                <g clip-path="url(#clip0_725_338)">
+                                <path d="M10.8572 24.6713C8.96362 26.1135 6.79024 27.1716 4.46635 27.7827C4.21039 27.8728 3.98924 28.0371 3.83295 28.2533C3.67666 28.4696 3.59282 28.7272 3.59282 28.9913C3.59282 29.2553 3.67666 29.513 3.83295 29.7292C3.98924 29.9454 4.21039 30.1098 4.46635 30.1998C22.8167 37.5027 34.4846 26.2141 32.7079 13.6913L35.6779 7.72556H32.2306C27.9347 2.60842 16.532 2.86556 18.4147 13.7684C18.4147 13.7684 12.3156 14.8227 4.51939 7.39128C4.33905 7.21862 4.11146 7.0997 3.86357 7.0486C3.61568 6.9975 3.35788 7.01636 3.12071 7.10294C2.88353 7.18953 2.67691 7.34021 2.52532 7.53714C2.37373 7.73408 2.28352 7.96902 2.26537 8.21413C1.44102 11.5 1.85356 14.9634 3.42872 17.9805C5.00387 20.9976 7.63814 23.3703 10.8572 24.6713Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_725_338">
+                                <rect width="37.125" height="36" fill="white" transform="translate(0.25 0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="38" height="37" viewBox="0 0 38 37" fill="none">
+                                <path d="M26.4219 3.5H10.9531C6.68155 3.5 3.21875 6.85786 3.21875 11V26C3.21875 30.1421 6.68155 33.5 10.9531 33.5H26.4219C30.6935 33.5 34.1562 30.1421 34.1562 26V11C34.1562 6.85786 30.6935 3.5 26.4219 3.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M27.1953 10.25H27.2108M24.875 17.555C25.0659 18.8034 24.846 20.0783 24.2466 21.1985C23.6472 22.3187 22.6987 23.2271 21.5362 23.7945C20.3737 24.3619 19.0563 24.5594 17.7714 24.3589C16.4865 24.1584 15.2994 23.5701 14.3792 22.6777C13.4589 21.7854 12.8522 20.6343 12.6455 19.3883C12.4387 18.1423 12.6424 16.8648 13.2275 15.7376C13.8126 14.6103 14.7494 13.6906 15.9046 13.1094C17.0598 12.5281 18.3746 12.3149 19.662 12.5C20.9752 12.6888 22.1909 13.2822 23.1296 14.1925C24.0683 15.1027 24.6802 16.2816 24.875 17.555Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+                                <path d="M1.3259 32.6428V4.35707C1.3259 3.67509 1.60528 3.02103 2.10259 2.5388C2.59989 2.05656 3.27439 1.78564 3.97768 1.78564H33.1473C33.8506 1.78564 34.5251 2.05656 35.0224 2.5388C35.5197 3.02103 35.7991 3.67509 35.7991 4.35707V32.6428C35.7991 33.3248 35.5197 33.9788 35.0224 34.4611C34.5251 34.9433 33.8506 35.2142 33.1473 35.2142H25.192V23.0256H27.0747C27.5037 23.0256 27.9152 22.8604 28.2185 22.5662C28.5219 22.2721 28.6923 21.8731 28.6923 21.4571V19.4771C28.6923 19.0611 28.5219 18.6621 28.2185 18.3679C27.9152 18.0738 27.5037 17.9085 27.0747 17.9085H25.298V15.4914C25.298 13.3314 26.3057 13.3314 27.3134 13.3314H28.6128C28.8262 13.3399 29.0389 13.3028 29.236 13.2229C29.433 13.1429 29.6095 13.0219 29.753 12.8685C29.9071 12.7262 30.0291 12.5545 30.1113 12.3642C30.1935 12.1739 30.234 11.9691 30.2304 11.7628V9.85993C30.2374 9.65054 30.2019 9.44185 30.1257 9.24579C30.0496 9.04973 29.9343 8.87014 29.7866 8.7173C29.6388 8.56446 29.4614 8.44136 29.2646 8.35504C29.0677 8.26871 28.8552 8.22086 28.6393 8.21422H25.5897C24.6999 8.18178 23.8135 8.33703 22.9916 8.66925C22.1697 9.00147 21.4319 9.50273 20.8293 10.1384C20.2267 10.7741 19.7736 11.5291 19.5013 12.3512C19.2289 13.1732 19.1439 14.0429 19.252 14.8999V17.9085H17.5548C17.3402 17.9051 17.127 17.9431 16.9277 18.0204C16.7283 18.0977 16.5469 18.2127 16.3938 18.3587C16.2408 18.5047 16.1193 18.6788 16.0363 18.8708C15.9534 19.0628 15.9107 19.2689 15.9107 19.4771V21.4571C15.9107 21.6652 15.9534 21.8713 16.0363 22.0633C16.1193 22.2553 16.2408 22.4294 16.3938 22.5754C16.5469 22.7214 16.7283 22.8364 16.9277 22.9137C17.127 22.991 17.3402 23.0291 17.5548 23.0256H19.252V35.2142H3.97768C3.27439 35.2142 2.59989 34.9433 2.10259 34.4611C1.60528 33.9788 1.3259 33.3248 1.3259 32.6428Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <p class="footer__phonenumber">تلفن پشتیبانی: 15*****0912</p>
+                    </div>
+                </div>
+                <div class="footer__wrapper-left">
+                    <div class="footer__list">
+                        <h3 class="footer__list-title">قوانین</h3>
+                        <ul class="footer__pages">
+                            <li class="footer__pages-item">
+                                <a href="#" class="footer__pages-link">صفحه اصلی</a>
+                            </li>
+                            <li class="footer__pages-item">
+                                <a href="#" class="footer__pages-link">درباره ما</a>
+                            </li>
+                            <li class="footer__pages-item">
+                                <a href="#" class="footer__pages-link">تماس با ما</a>
+                            </li>
+                            <li class="footer__pages-item">
+                                <a href="#" class="footer__pages-link">همکاری با ما</a>
+                            </li>
+                            <li class="footer__pages-item">
+                                <a href="#" class="footer__pages-link">سوالات متداول</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__list">
+                        <h3 class="footer__list-title">سینما سیتی</h3>
+                        <ul class="footer__pages">
+                            <li class="footer__pages-item">
+                                <a href="#" class="footer__pages-link">صفحه اصلی</a>
+                            </li>
+                            <li class="footer__pages-item">
+                                <a href="#" class="footer__pages-link">درباره ما</a>
+                            </li>
+                            <li class="footer__pages-item">
+                                <a href="#" class="footer__pages-link">تماس با ما</a>
+                            </li>
+                            <li class="footer__pages-item">
+                                <a href="#" class="footer__pages-link">همکاری با ما</a>
+                            </li>
+                            <li class="footer__pages-item">
+                                <a href="#" class="footer__pages-link">سوالات متداول</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__list">
+                        <h3 class="footer__list-title">دانلود</h3>
+                        <ul class="footer__pages">
+                            <li class="footer__pages-item">
+                                <a href="#" class="footer__pages-link">فیلم</a>
+                            </li>
+                            <li class="footer__pages-item">
+                                <a href="#" class="footer__pages-link">سریال</a>
+                            </li>
+                            <li class="footer__pages-item">
+                                <a href="#" class="footer__pages-link">انیمیشن</a>
+                            </li>
+                            <li class="footer__pages-item">
+                                <a href="#" class="footer__pages-link">جستجو</a>
+                            </li>
+                            <li class="footer__pages-item">
+                                <a href="#" class="footer__pages-link">دسته بندی</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <svg class="footer__svg-bottom" xmlns="http://www.w3.org/2000/svg" width="1440" height="61" viewBox="0 0 1440 61" fill="none">
+            <path d="M1 63V1.00391L290.745 1.90137C310.664 1.96313 329.613 10.5081 342.847 25.3955L376.273 63H1Z" stroke="#1EB7E8" stroke-width="2"/>
+            <path d="M366 65H10V10H287.217C308.442 10 328.553 19.4956 342.04 35.8845L366 65Z" fill="#DF2144"/>
+        </svg>
+    </footer>
+    <script src="script/moviepageApp.js"></script>
+</body>
+</html>
